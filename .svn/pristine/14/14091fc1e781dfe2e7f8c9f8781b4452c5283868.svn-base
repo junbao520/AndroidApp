@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@color/global_bk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/header" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="路口左转开始语音"
+            android:textColor="#ff0000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtTurnLeftVoice" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="路口左转结束语音"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView9"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtTurnLeftEndVoice"
+            android:layout_weight="0.02" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="项目距离"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView16"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtTurnLeftDistance" />
+      <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10.0dip"
+      android:singleLine="true"
+      android:text="准备距离"
+      android:textColor="#ff000000"
+      android:textSize="15.0dip"
+      android:id="@+id/textView16"
+      android:layout_weight="0.02" />
+      <EditText
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:inputType="number"
+          android:ems="10"
+          android:id="@+id/edtTxtTurnLeftPrepareD" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="速度限制"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView17"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtTurnLeftSpeedLimit"
+            android:layout_weight="0.02" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="刹车限制速度"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView18"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtTurnLeftBrakeSpeedUp"
+            android:layout_weight="0.02" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="变道角度"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView16"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtTurnLeftAngle" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="必踩刹车"
+            android:id="@+id/chkTurnLeftBrakeRequire"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转向灯检测"
+            android:id="@+id/chkTurnLeftLightCheck"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="白考喇叭检测"
+            android:id="@+id/chkTurnLeftLoudSpeakerDayCheck"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="夜考喇叭检测"
+            android:id="@+id/chkTurnLeftLoudSpeakerNightCheck"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+		 <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="角度达到就完成"
+            android:id="@+id/chkTurnLeftEndFlag"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+		 <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打错转向灯检测"
+            android:id="@+id/chkTurnLeftErrorLight"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+    </LinearLayout>
+</LinearLayout>

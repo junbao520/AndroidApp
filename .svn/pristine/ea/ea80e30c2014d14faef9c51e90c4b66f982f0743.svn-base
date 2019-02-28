@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f5ed"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layouts"
+        android:orientation="vertical">
+        <include layout="@layout/header" />
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip"
+            android:text="温馨提示：请点击考试项目选择对应的扣分规则"
+            android:textColor="@color/red"
+            android:textSize="20.0dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/btn_change_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_transparent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.0dip"
+                        android:layout_marginLeft="0.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="考试项目"
+                        android:textColor="#ff4990cf"
+                        android:textSize="16.0dip" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="#fff7f5ed" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="3.0dip">
+
+                    <ListView
+                        android:id="@+id/examItem_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@color/whiteGray"
+                        android:dividerHeight="1dip"
+                        android:fadingEdge="none"
+                        android:paddingTop="0.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/btn_change_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_transparent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.0dip"
+                        android:layout_marginLeft="0.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="扣分规则(点击编辑)"
+                        android:textColor="#ff4990cf"
+                        android:textSize="16.0dip" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="#fff7f5ed" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="3.0dip">
+
+                    <ListView
+                        android:id="@+id/deductionrule_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@color/whiteGray"
+                        android:dividerHeight="1dip"
+                        android:fadingEdge="none"
+                        android:paddingTop="0.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

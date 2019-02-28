@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@color/global_bk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="灯光模拟语音"
+            android:textColor="#ff0000"
+            android:textSize="15.0dip" />
+
+        <EditText
+            android:id="@+id/edtTxtLightVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:inputType="text" />
+    </LinearLayout>
+  <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:text="灯光结束语音"
+        android:textColor="#ff0000"
+        android:textSize="15.0dip" />
+
+    <EditText
+        android:id="@+id/edtTxtLightEndVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:inputType="text" />
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="灯光模拟检测时间"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="4"
+            android:id="@+id/edtTxtSimulationLightTimeout" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="语音间隔"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip" />
+
+        <EditText
+            android:id="@+id/edtTxtSimulationLightInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:ems="4"
+            android:inputType="number" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="白天"
+        android:id="@+id/chkSimulationsLightOnDay"
+        android:textColor="@color/black"
+        android:layout_weight="0.02" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="夜间"
+        android:id="@+id/chkSimulationsLightOnNight"
+        android:textColor="@color/black"
+        android:layout_weight="0.02" />
+</LinearLayout>
+</LinearLayout>

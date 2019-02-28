@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@color/global_bk"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="急弯破路开始语音"
+            android:textColor="#ff0000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtSharpTurnVoice" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="急弯破路结束语音"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView9"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtSharpTurnEndVoice"
+            android:layout_weight="0.02" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="项目距离"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView16"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtSharpTurnDistance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="速度限制"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView17"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtSharpTurnSpeedLimit"
+            android:layout_weight="0.02" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="必踩刹车"
+            android:id="@+id/chkSharpTurnBrake"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="夜考远近光交替"
+            android:id="@+id/chkSharpTurnLightCheck"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="白考喇叭检测"
+            android:id="@+id/chkSharpTurnLoudspeakerInDay"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="夜考喇叭检测"
+            android:id="@+id/chkSharpTurnLoudspeakerInNight"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+
+
+    </LinearLayout>
+
+  <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左转检测"
+        android:id="@+id/chkSharpTurnLeftLight"
+        android:textColor="@color/black"
+        android:layout_weight="0.02" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="右转检测"
+        android:id="@+id/chkSharpTurnRightLight"
+        android:textColor="@color/black"
+        android:layout_weight="0.02" />
+    
+  </LinearLayout>
+</LinearLayout>

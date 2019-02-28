@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="700dip"
+    android:layout_height="350dip">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/ssid_input_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/color_blue_008cee"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:padding="1.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:text="身份确认"
+            android:layout_weight="1.0" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="5.0">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="5.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="5.0">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dip"
+                        android:textColor="@color/Black"
+                        android:text="流  水  号:" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dip"
+                        android:textColor="@color/Black"
+                        android:text="L000000011" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dip"
+                        android:textColor="@color/Black"
+                        android:text="姓        名:" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dip"
+                        android:textColor="@color/Black"
+                        android:text="张某某" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:textSize="20dip"
+                        android:text="性        别:" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:textSize="20dip"
+                        android:text="女" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:textSize="20dip"
+                        android:text="业务类型:" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:textSize="20dip"
+                        android:text="初学" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:textSize="20dip"
+                        android:text="报考车型:" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:textSize="20dip"
+                        android:text="c1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:textSize="20dip"
+                        android:text="身份证号:" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:textSize="20dip"
+                        android:text="L000000011" />
+                </LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.0dip"
+                    android:src="@drawable/foshanheader"
+                    android:scaleType="fitXY"
+                    android:layout_weight="3.0" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10.0dip"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3.0">
+                <Button
+                    android:textSize="30.0sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_white"
+                    android:id="@+id/btn_Start"
+                    android:background="@color/gray_blue2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="开始\n考试" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

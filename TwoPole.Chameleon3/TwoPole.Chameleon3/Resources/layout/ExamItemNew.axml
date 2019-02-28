@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5">
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="灯光模拟"
+      android:layout_marginLeft="@dimen/exam_item_marign_left"
+      android:layout_marginTop="@dimen/exam_item_marign_top"
+         android:textSize="@dimen/exam_fontsize"
+      android:textColor="@android:color/holo_blue_bright"
+      android:layout_weight="1"
+      android:id="@+id/list_1_1" />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@android:color/holo_blue_bright"
+      android:text="灯光模拟"
+         android:textSize="@dimen/exam_fontsize"
+      android:layout_marginLeft="@dimen/exam_item_marign_left"
+      android:layout_marginTop="@dimen/exam_item_marign_top"
+      android:layout_weight="1"
+      android:layout_toRightOf="@+id/list_1_1"
+      android:id="@+id/list_1_2" />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@android:color/holo_blue_bright"
+      android:text="灯光模拟"
+         android:textSize="@dimen/exam_fontsize"
+      android:layout_marginLeft="@dimen/exam_item_marign_left"
+      android:layout_marginTop="@dimen/exam_item_marign_top"
+      android:layout_weight="1"
+      android:layout_toRightOf="@+id/list_1_2"
+      android:id="@+id/list_1_3" />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@android:color/holo_blue_bright"
+      android:text="灯光模拟"
+         android:textSize="@dimen/exam_fontsize"
+      android:layout_marginLeft="@dimen/exam_item_marign_left"
+      android:layout_marginTop="@dimen/exam_item_marign_top"
+      android:layout_weight="1"
+      android:layout_toRightOf="@+id/list_1_3"
+      android:id="@+id/list_1_4" />
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@android:color/holo_blue_bright"
+      android:text="灯光模拟"
+      android:textSize="@dimen/exam_fontsize"
+     android:layout_marginLeft="@dimen/exam_item_marign_left"
+      android:layout_marginTop="@dimen/exam_item_marign_top"
+      android:layout_weight="1"
+      android:layout_toRightOf="@+id/list_1_4"
+      android:id="@+id/list_1_5" />
+</LinearLayout>

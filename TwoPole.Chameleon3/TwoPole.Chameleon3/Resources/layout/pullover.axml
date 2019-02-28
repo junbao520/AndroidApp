@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/global_bk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/header" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="开始语音"
+            android:textColor="#ff0000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtPullOverVoice" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="项目距离"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView9"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtPullOverMaxDrivingDistance"
+            android:layout_weight="0.02" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="停车手刹释放时间"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView16"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtPullOverHandbrakeTimeout" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="下车时间"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView34"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtPullOverDoorTimeout" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开警示灯"
+            android:id="@+id/chkPullOverOpenCautionBeforeGetOff"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="松安全带"
+            android:id="@+id/chkPullOverOpenSafetyBeltBeforeGetOff"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转项灯检测"
+            android:id="@+id/chkPullOverTurnLightCheck"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空挡检测"
+            android:id="@+id/chkPullOverNeutralCheck"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关发动机"
+            android:id="@+id/chkPullOverStopEngineBeforeGetOff"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关近光"
+            android:id="@+id/chkPullOverCloseLowBeamBeforeGetOff"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="考试自动结束"
+            android:id="@+id/chkPulloverEndAutoTriggerStopExam"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否触发起步项目"
+            android:id="@+id/chkPulloverEndAutoTriggerStart"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="停车标志"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView4"
+                android:layout_weight="0.02" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手刹"
+                android:textColor="@color/black"
+                android:id="@+id/radStopFlagHandBreak"
+                android:layout_weight="0.02" />
+            <RadioButton
+                android:id="@+id/radStopFlagCarStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02"
+                android:text="车停"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="结束标志"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView4"
+                android:layout_weight="0.02" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开警示灯"
+                android:textColor="@color/black"
+                android:id="@+id/radPullOverCautionLight"
+                android:layout_weight="0.02" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关近光灯"
+                android:textColor="@color/black"
+                android:id="@+id/radPullOverLowBeamCheck"
+                android:layout_weight="0.02" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发动机熄火"
+                android:textColor="@color/black"
+                android:id="@+id/radPullOverEngineExtinction"
+                android:layout_weight="0.02" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="松安全带"
+                android:textColor="@color/black"
+                android:id="@+id/radPullOverSafetyBelt"
+                android:layout_weight="0.02" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开关车门"
+                android:textColor="@color/black"
+                android:id="@+id/radPullOverOpenCloseDoor"
+                android:layout_weight="0.02" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拉紧驻车制动"
+                android:textColor="@color/black"
+                android:id="@+id/radPullOverHandbrake"
+                android:layout_weight="0.02" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开车门"
+                android:textColor="@color/black"
+                android:id="@+id/radPullOverOpenDoor"
+                android:layout_weight="0.02" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="变道角度"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtPullOverAngle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="开车门时间"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtPullOverOpenDoorTime" />
+    </LinearLayout>
+	  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="靠边摄像头安装配置"
+            android:textColor="#ff000000"
+			android:background="#CDC5BF"
+            android:textSize="15.0dip"
+            android:id="@+id/btnPulloverImage"
+            android:layout_weight="0.02" />
+		 </LinearLayout>
+</LinearLayout>

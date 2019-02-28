@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/global_bk"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+            <include
+                layout="@layout/header" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:weightSum="1"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="车型"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0dip"
+                        android:id="@+id/textView4"
+                        android:layout_marginTop="15dp" />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <RadioButton
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="默认"
+                            android:textColor="@color/black"
+                            android:id="@+id/radConnectionSchemeDefalut"
+                            android:layout_weight="0.02" />
+                        <RadioButton
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="新桑"
+                            android:textColor="@color/black"
+                            android:id="@+id/radConnectionSchemeNewMulberry"
+                            android:layout_weight="0.02" />
+                        <RadioButton
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="新捷达"
+                            android:textColor="@color/black"
+                            android:id="@+id/radConnectionSchemeNewJetta"
+                            android:layout_weight="0.02" />
+                        <RadioButton
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="爱丽舍"
+                            android:textColor="@color/black"
+                            android:id="@+id/radConnectionSchemeOBDElysee"
+                            android:layout_weight="0.02" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="雾灯取反"
+                        android:id="@+id/chkFogLight"
+                        android:textColor="@color/black"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerFogLightAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="远光取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkHighBeam"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerHighBeamAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="车头取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkArrivedHeadstock"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerArrivedHeadstockAddress" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="喇叭取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkLoudspeaker"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerLoudspeakerAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="近光取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkLowBeam"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerLowBeamAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="车尾取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkArrivedTailstock"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerArrivedTailstockAddress" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="车门取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkDoor"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerDoorAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="四廓灯取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkOutlineLight"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerOutlineLightAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="左转取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkLeftIndicatorLight"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerLeftIndicatorLightAddress" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="手刹取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkHandbrake"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerHandbrakeAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="右转取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkRightIndicatorLight"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerRightIndicatorLightAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="离合取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkClutch"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerClutchAddress" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="安全带取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkSafetyBelt"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerSafetyBeltAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="内后视镜取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkInnerMirror"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerInnerMirrorAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="座椅取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkSeats"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerSeatsAddress" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="发动机取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkEngine"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerEngineAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="外后视镜取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkExteriorMirror"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerExteriorMirrorAddress" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="刹车取反"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkBrake"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerBrakeAddress" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="档显1"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkGearDisplay1"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerGearDisplay1Address" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="档显2"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkGearDisplay2"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerGearDisplay2Address" />
+                    <CheckBox
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="档显3"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkGearDisplay3"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerGearDisplay3Address" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+                    <CheckBox
+                        android:layout_width="120.0dp"
+                        android:layout_height="wrap_content"
+                        android:text="档显4"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkGearDisplay4"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerGearDisplay4Address" />
+                    <CheckBox
+                        android:layout_width="120.0dp"
+                        android:layout_height="wrap_content"
+                        android:text="车尾2"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkArrivedTailstock2"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerArrivedTailstock2Address" />
+                    <CheckBox
+                        android:layout_width="120.0dp"
+                        android:layout_height="wrap_content"
+                        android:text="车头2"
+                        android:textColor="@color/black"
+                        android:id="@+id/chkArrivedHeadstock2"
+                        android:layout_weight="0.07" />
+                    <Spinner
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerArrivedHeadstock2Address" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </HorizontalScrollView>
+</ScrollView>

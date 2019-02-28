@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">TwoPole.Chameleon3</string>
+  <string name="InitDataBaseWarningStr">警告:恢复初始数据会造成数据丢失!!!</string>
+  <string name="AssistanceToolsStr">辅助功能</string>
+  <string name="GlobalSettingStr">全局参数</string>
+  <string name="ItemSettingStr">专项参数</string>
+  <string name="SensorSettingStr">传感器配置</string>
+  <string name="LightSimulationSettingStr">灯光模拟配置</string>
+  <string name="SensorLineSettingStr">信号线路设置</string>
+  <string name="PrepareDrivingStr">上车准备</string>
+  <string name="SimulationLightsStr">灯光模拟</string>
+  <string name="VehicleStartingStr">起步</string>
+  <string name="PullOverStr">靠边停车</string>
+  <string name="ThroughPedestrianCrossingStr">人行横道</string>
+  <string name="ThroughBusAreaStr">公交车站</string>
+  <string name="ThroughSchoolAreaStr">学校区域</string>
+  <string name="StraightThroughIntersectionStr">路口直行</string>
+  <string name="TurnLeftStr">路口左转</string>
+  <string name="TurnRightStr">路口右转</string>
+  <string name="TurnRoundStr">掉头</string>
+  <string name="StraightDrivingStr">直线行驶</string>
+  <string name="RoundaboutStr">环岛</string>
+  <string name="ChangeLanesStr">变更车道</string>
+  <string name="MeetingStr">会车</string>
+  <string name="OvertakeStr">超车</string>
+  <string name="SharpTurnStr">急弯坡路</string>
+  <string name="ModifiedGearStr">加减档</string>
+  <string name="CommonExamItemStr">综合评判</string>
+  <string name="DeductionRuleSettingStr">扣分规则修改</string>
+  
+</resources>

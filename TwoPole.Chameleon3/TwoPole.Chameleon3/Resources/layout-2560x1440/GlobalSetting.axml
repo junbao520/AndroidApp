@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/global_bk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <include
+      layout="@layout/header" />
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="0.0dip"
+      android:layout_weight="1.0">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+      <LinearLayout
+          android:id="@+id/btn_kemu2_setting"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10.0dip"
+          android:background="@drawable/table_above_bg"
+          android:clickable="true"
+          android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:duplicateParentState="true"
+                android:id="@+id/tvGlobalSetting"
+                android:text="考试设置"
+                android:textColor="@color/grayslate"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:layout_weight="1.0"
+                android:duplicateParentState="true"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_14" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="考试里程"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtExamDistance" />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="夜考里程"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtNightDistance" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="偏离行驶方向"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtMaxFromEdgeDistance"
+                android:layout_weight="0" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:text="转向灯提前"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtTurnLightAheadOfTime" />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="转向灯超时"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtIndicatorLightTimeout" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="转向灯超距"
+                android:inputType="numberDecimal"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtIndicatorLightDistacneout"
+                android:layout_weight="0" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:text="发动机怠速"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtMinEngineRpm" />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="发动机最高转速"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtMaxEngineRpm" />
+            <TextView
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10.0dip"
+              android:singleLine="true"
+              android:text="维持时间"
+              android:textColor="#ff000000"
+              android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtMaxEngineRpmTime" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:text="启动最低速度"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtCarStartLowSpeed" />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="发动机熄火转速"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtEngineStopRmp" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="刹车维持时间"
+                android:inputType="numberDecimal"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtBrakeKeepTime"
+                android:layout_weight="0" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:text="发动机熄火时间"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtEngineTimeOut"
+                android:layout_weight="0.00" />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:text="安全带检测时间"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView8" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtSafetyBeltTimeOut"
+                android:layout_weight="0" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不合格继续考试"
+                android:id="@+id/chkContinueExamIfFailed"
+                android:textColor="@color/black" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="日志输出"
+                android:id="@+id/chkLogEnable"
+                android:textColor="@color/black" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="手动挡"
+                android:id="@+id/chkLicenseType"
+                android:textColor="@color/black" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="触犯规则语音"
+                android:textColor="@color/black"
+                android:id="@+id/chkVoiceBrokenRule" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="里程达到结束"
+                android:id="@+id/chkEndExamByDistance"
+                android:textColor="@color/black" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="空挡启动发动机"
+                android:id="@+id/chkNeutralStart"
+                android:textColor="@color/black" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="靠边达到项目启动"
+                android:id="@+id/chkPullOverStartFlag"
+                android:textColor="@color/black" />
+          </LinearLayout>
+          <LinearLayout
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:weightSum="1">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="显示公司Logo"
+                 android:visibility="invisible"
+                android:id="@+id/chkIsShowCompanyLogo"
+                android:textColor="@color/black" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="灯光模拟播放叮语音"
+                android:id="@+id/chkIsPlayDingVoice"
+                android:textColor="@color/black" />
+
+            <CheckBox
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="5.0dip"
+         android:text="显示学员信息"
+         android:id="@+id/chkShowStudentInfo"
+         android:textColor="@color/black" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:text="语音播放间隔(秒)"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView8" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtVoicePlayInterval"
+                android:layout_weight="0" />
+          </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/btn_kemu2_setting"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10.0dip"
+          android:layout_marginBottom="10.0dip"
+          android:background="@drawable/table_above_bg"
+          android:clickable="true"
+          android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:duplicateParentState="true"
+                android:text="档位和速度设置"
+                android:textColor="@color/grayslate"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:layout_weight="1.0"
+                android:duplicateParentState="true"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_14" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="空挡滑行距离"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtNeutralTaxiingMaxDistance" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="空挡滑行时间"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtNeutralTaxiingMaxTime" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="全程限速"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtMaxSpeedSpeed"
+                android:layout_weight="0" />
+
+          </LinearLayout>
+          <LinearLayout
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:weightSum="1">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="达到一次速度"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtReachSpeed" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="达到速度时间"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView45" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtReachSpeedKeepTime" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="制动不平顺"
+                android:inputType="numberDecimal"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtBrakeNotRide"
+                android:layout_weight="0" />
+          </LinearLayout>
+          <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:text="达到速度距离"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtReachSpeedKeepDistance" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="离合限制时间"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtClutchTaxiingTimeout" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="离合限制距离"
+                android:inputType="numberDecimal"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtClutchLimitDistance"
+                android:layout_weight="0" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="离合评判的速度（该速度以下不评判）"
+                android:inputType="numberDecimal"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtClutchSpeed"
+                android:layout_weight="0" />
+
+            <TextView
+              android:layout_width="120dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10.0dip"
+              android:singleLine="true"
+              android:inputType="numberDecimal"
+              android:text="全程最低档位"
+              android:textColor="#ff000000"
+              android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtGlobalLowestGear" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:text="一档最高速度"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtGearOneMaxSpeed" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="一档限制时间"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGearOneTimeOut" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="一档限制距离"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView5" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGearOneDistanceOut" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:text="二挡最低速度"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtGearTwoLowestSpeed" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="二挡最高速度"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGearTwoMaxSpeed" />
+            <!--<TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="二挡限制时间"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView5" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGearTwoTimeOut" />-->
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="二挡限制时间"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView5" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGearTwoTimeOut" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="二挡限制距离"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView46" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGearTwoDistanceOut" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:text="三挡最低速度"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtGearThreeLowestSpeed" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="三挡最高速度"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGearThreeMaxSpeed" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="四挡最低速度"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView5" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGearFourLowestSpeed" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="四挡最高速度"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGearFourMaxSpeed" />
+          </LinearLayout>
+          <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:weightSum="1">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="全程档位要求"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGlobalContinuousGear" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="档位达到速度"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView5" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGlobalContinuousSpeed" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="挡位持续时间"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/edtTxtGearThreeMaxSpeed" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtGlobalContinuousSeconds" />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="挡位速度不匹配"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/edtTxtGearThreeMaxSpeed" />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTxtSpeedAndGearTimeout" />
+          </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

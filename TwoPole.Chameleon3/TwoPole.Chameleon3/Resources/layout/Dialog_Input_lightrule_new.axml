@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10.0dip"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="灯光模拟规则语音"
+        android:textColor="@color/red"
+        android:id="@+id/textView22"
+        android:layout_weight="4.30" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启用自选灯光组合"
+        android:id="@+id/chkEnableCustom"
+        android:layout_weight="4.30" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/dialog_input_value"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="10dp"
+        android:layout_weight="4.30"
+        android:gravity="center_vertical"
+        android:hint="请在此输入..."
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="10.0dip"
+        android:textSize="16.0dip" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="灯光模拟评判规则"
+        android:textColor="@color/red"
+        android:id="@+id/textView22"
+        android:layout_weight="4.30" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LightRulespinner"
+        android:layout_weight="4.30" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="允许灯光"
+        android:textColor="@color/red"
+        android:id="@+id/textView22"
+        android:layout_weight="4.30" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="远光"
+        android:id="@+id/chkAllowHighBeamLight"
+        android:layout_weight="4.30" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="近光"
+        android:id="@+id/chkAllowLowBeamLight"
+        android:layout_weight="4.30" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="示廓灯"
+        android:id="@+id/chkAllowOutlineLight"
+        android:layout_weight="4.30" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="雾灯"
+        android:id="@+id/chkAllowFogLight"
+        android:layout_weight="4.30" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左转"
+        android:id="@+id/chkAllowTurnLeftLight"
+        android:layout_weight="4.30" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右转"
+            android:id="@+id/chkAllowTurnRightLight"
+            android:layout_weight="4.30" />
+        <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="警示灯"
+        android:id="@+id/chkAllowCautionLight"
+        android:layout_weight="4.30" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="禁止灯光"
+        android:textColor="@color/red"
+        android:id="@+id/textView22"
+        android:layout_weight="4.30" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="远光"
+            android:id="@+id/chkForbidHighBeamLight"
+            android:layout_weight="4.30" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="近光"
+            android:id="@+id/chkForbidLowBeamLight"
+            android:layout_weight="4.30" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="示廓灯"
+            android:id="@+id/chkForbidOutlineLight"
+            android:layout_weight="4.30" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雾灯"
+            android:id="@+id/chkForbidFogLight"
+            android:layout_weight="4.30" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左转"
+            android:id="@+id/chkForbidTurnLeftLight"
+            android:layout_weight="4.30" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右转"
+            android:id="@+id/chkForbidTurnRightLight"
+            android:layout_weight="4.30" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="警示灯"
+            android:id="@+id/chkForbidCautionLight"
+            android:layout_weight="4.30" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交替灯光"
+        android:textColor="@color/red"
+        android:id="@+id/textView22"
+        android:layout_weight="4.30" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="远近光交替一次"
+            android:id="@+id/chkAlternateLightOne"
+            android:layout_weight="4.30" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="远近光交替二次"
+            android:id="@+id/chkAlternateLightTwo"
+            android:layout_weight="4.30" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="远近光交替三次"
+            android:id="@+id/chkAlternateLightThree"
+            android:layout_weight="4.30" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="远近光交替四次"
+            android:id="@+id/chkAlternateLightFour"
+            android:layout_weight="4.30" />
+    </LinearLayout>
+</LinearLayout>

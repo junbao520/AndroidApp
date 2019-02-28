@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3780EE60-609D-4770-9DD6-920B06E9105C}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TwoPole.Chameleon3.Business</RootNamespace>
+    <AssemblyName>TwoPole.Chameleon3.Business</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight">
+      <HintPath>..\..\..\Solution Items\Libs\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExamItems\ArchBridge.cs" />
+    <Compile Include="ExamItems\ChangeLanes.cs" />
+    <Compile Include="ExamItems\ChongQing\FengDu\Overtake.cs" />
+    <Compile Include="ExamItems\ChongQing\FuLing\CommonExamItem.cs" />
+    <Compile Include="ExamItems\ChongQing\FuLing\ModifiedGear.cs" />
+    <Compile Include="ExamItems\ChongQing\FuLing\Overtake.cs" />
+    <Compile Include="ExamItems\ChongQing\FuLing\PrepareDrivingV4.cs" />
+    <Compile Include="ExamItems\ChongQing\FuLing\PullOver.cs" />
+    <Compile Include="ExamItems\ChongQing\FuLing\TurnRoundPlease.cs" />
+    <Compile Include="ExamItems\CommonExamItem.cs" />
+    <Compile Include="ExamItems\ExamItemBase.cs" />
+    <Compile Include="ExamItems\Foshan\Overtake.cs" />
+    <Compile Include="ExamItems\Foshan\PrepareDriving.cs" />
+    <Compile Include="ExamItems\GuiZhou\ZunYi\CommonExamItem.cs" />
+    <Compile Include="ExamItems\GuiZhou\ZunYi\PrepareDriving.cs" />
+    <Compile Include="ExamItems\GuLin\Module\LocalizationExamModule.cs" />
+    <Compile Include="ExamItems\GuLin\TurnRound.cs" />
+    <Compile Include="ExamItems\GuLin\VehicleStarting.cs" />
+    <Compile Include="ExamItems\hainan\Haikou\ChangeLanes.cs" />
+    <Compile Include="ExamItems\hainan\Haikou\HaiKouPrepareDriving.cs" />
+    <Compile Include="ExamItems\hainan\Haikou\PrepareDriving_HaiHe.cs" />
+    <Compile Include="ExamItems\hainan\Haikou\PullOver_HaiHe.cs" />
+    <Compile Include="ExamItems\hainan\Haikou\VehicleStarting.cs" />
+    <Compile Include="ExamItems\ILightExamItem.cs" />
+    <Compile Include="ExamItems\JingTang\CustomDeductionRules.cs" />
+    <Compile Include="ExamItems\JingTang\ExamItems\PrepareDriving.cs" />
+    <Compile Include="ExamItems\JingTang\ExamModule.cs" />
+    <Compile Include="ExamItems\JingTang\Rules\OpenHighLightRule.cs" />
+    <Compile Include="ExamItems\JingTang\Rules\RuleResult.cs" />
+    <Compile Include="ExamItems\JingTang\SimulationLights.cs" />
+    <Compile Include="ExamItems\LongQuan\CommonExamItem.cs" />
+    <Compile Include="ExamItems\LongQuan\PrepareDriving.cs" />
+    <Compile Include="ExamItems\LongQuan\SimulationLights.cs" />
+    <Compile Include="ExamItems\LuXian\Overtake.cs" />
+    <Compile Include="ExamItems\LuXian\PrepareDrivingV4.cs" />
+    <Compile Include="ExamItems\LuXian\VehicleStarting.cs" />
+    <Compile Include="ExamItems\LuZhou\CommonExamItem.cs" />
+    <Compile Include="ExamItems\LuZhou\Module\LocalizationExamModule.cs" />
+    <Compile Include="ExamItems\LuZhou\Overtake.cs" />
+    <Compile Include="ExamItems\LuZhou\PrepareDrivingV4.cs" />
+    <Compile Include="ExamItems\LuZhou\PullOver.cs" />
+    <Compile Include="ExamItems\LuZhou\ThroughPedestrianCrossing.cs" />
+    <Compile Include="ExamItems\LuZhou\StraightThroughIntersection.cs" />
+    <Compile Include="ExamItems\LuZhou\Meeting.cs" />
+    <Compile Include="ExamItems\LuZhou\ThroughBusArea.cs" />
+    <Compile Include="ExamItems\LuZhou\ThroughSchoolArea.cs" />
+    <Compile Include="ExamItems\LuZhou\TurnRight.cs" />
+    <Compile Include="ExamItems\LuZhou\TurnLeft.cs" />
+    <Compile Include="ExamItems\LuZhou\VehicleStarting.cs" />
+    <Compile Include="ExamItems\Meeting.cs" />
+    <Compile Include="ExamItems\ModifiedGear.cs" />
+    <Compile Include="ExamItems\NextExamItem.cs" />
+    <Compile Include="ExamItems\Overtake.cs" />
+    <Compile Include="ExamItems\OvertakeChangeMeeting.cs" />
+    <Compile Include="ExamItems\PrepareDrivingV4.cs" />
+    <Compile Include="ExamItems\PreVoiceExamItem.cs" />
+    <Compile Include="ExamItems\PullOver.cs" />
+    <Compile Include="ExamItems\QianJiang\ModifiedGear.cs" />
+    <Compile Include="ExamItems\RongChang\ModifiedGear.cs" />
+    <Compile Include="ExamItems\RongChang\PrepareDrivingV4.cs" />
+    <Compile Include="ExamItems\Roundabout.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\ChangeLanes.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\CommonExamItem.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\Overtake.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\PrepareDriving.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\PullOver.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\PullOverOld.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\StraightDriving.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\StraightThroughIntersection.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\ThroughPedestrianCrossingHasPeople.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\TurnLeft.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\TurnRight.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\TurnRound.cs" />
+    <Compile Include="ExamItems\SanYa\ExamItem\VehicleStarting.cs" />
+    <Compile Include="ExamItems\hainan\Haikou\CommonExamItem_HaiHe.cs" />
+    <Compile Include="ExamItems\SanYa\Lights\FogDrivingLightRule.cs" />
+    <Compile Include="ExamItems\SanYa\Lights\HighBeamLightRule.cs" />
+    <Compile Include="ExamItems\SanYa\Lights\LowAndHighBeamLightRule.cs" />
+    <Compile Include="ExamItems\SanYa\Lights\LowBeamLightRule.cs" />
+    <Compile Include="ExamItems\SanYa\Lights\OpenLightLowAndHighBeamLightRule.cs" />
+    <Compile Include="ExamItems\SanYa\Lights\OutlineAndCautionLightRule.cs" />
+    <Compile Include="ExamItems\SanYa\Lights\OvertakeLightRule.cs" />
+    <Compile Include="ExamItems\SanYa\Module\ExamModule.cs" />
+    <Compile Include="ExamItems\SharpTurn.cs" />
+    <Compile Include="ExamItems\SimulationLights.cs" />
+    <Compile Include="ExamItems\SimulationLightsBak.cs" />
+    <Compile Include="ExamItems\SlowSpeed.cs" />
+    <Compile Include="ExamItems\SlowSpeeds.cs" />
+    <Compile Include="ExamItems\SpeedLimit.cs" />
+    <Compile Include="ExamItems\StraightDriving.cs" />
+    <Compile Include="ExamItems\StraightThroughIntersection.cs" />
+    <Compile Include="ExamItems\suining\OutlineAndCautionLightRule.cs" />
+    <Compile Include="ExamItems\TempPark.cs" />
+    <Compile Include="ExamItems\ThroughBusArea.cs" />
+    <Compile Include="ExamItems\ThroughPedestrianCrossing.cs" />
+    <Compile Include="ExamItems\ThroughPedestrianCrossingHasPeople.cs" />
+    <Compile Include="ExamItems\ThroughSchoolArea.cs" />
+    <Compile Include="ExamItems\TransientExamItem.cs" />
+    <Compile Include="ExamItems\TurnLeft.cs" />
+    <Compile Include="ExamItems\TurnRight.cs" />
+    <Compile Include="ExamItems\TurnRound.cs" />
+    <Compile Include="ExamItems\UnfreezeSpeedLimit.cs" />
+    <Compile Include="ExamItems\VehicleStarting.cs" />
+    <Compile Include="ExamItems\WanZhou\Rules\TurnLeftBeamLightRule.cs" />
+    <Compile Include="ExamItems\WanZhou\Rules\TurnRightBeamLightRule.cs" />
+    <Compile Include="ExamItems\WavedCurve.cs" />
+    <Compile Include="ExamItems\XuZhou\Rules\FogDrivingLightRule.cs" />
+    <Compile Include="ExamItems\YunFu\Overtake.cs" />
+    <Compile Include="ExamItems\YunFu\PrepareDriving.cs" />
+    <Compile Include="Modules\ExamModule.cs" />
+    <Compile Include="Modules\LightModule.cs" />
+    <Compile Include="Modules\ModuleBase.cs" />
+    <Compile Include="Modules\SensorModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuleBase.cs" />
+    <Compile Include="Rules\Lights\CloseAllLightExceptLeftRule.cs" />
+    <Compile Include="Rules\Lights\CloseAllLightRule.cs" />
+    <Compile Include="Rules\Lights\CloseCautionLightRuleOnly .cs" />
+    <Compile Include="Rules\Lights\FogDrivingLightRule.cs" />
+    <Compile Include="Rules\Lights\FogDrivingLightRule2.cs" />
+    <Compile Include="Rules\Lights\HighBeamIgnoreCaution.cs" />
+    <Compile Include="Rules\Lights\HighBeamLightRule.cs" />
+    <Compile Include="Rules\Lights\LefLowAndHighBeamOnceLightRule.cs" />
+    <Compile Include="Rules\Lights\LeftLowAndHighBeamTwiceLightRule.cs" />
+    <Compile Include="Rules\Lights\LeftLowBeamLightRule.cs" />
+    <Compile Include="Rules\Lights\LightRule.cs" />
+    <Compile Include="Rules\Lights\LightRuleCloseAllLight.cs" />
+    <Compile Include="Rules\Lights\LowAndHighBeamFourthLightRule.cs" />
+    <Compile Include="Rules\Lights\LowAndHighBeamLightRule.cs" />
+    <Compile Include="Rules\Lights\LowAndHighBeamOnceLeftIndicatorRule.cs" />
+    <Compile Include="Rules\Lights\LowAndHighBeamOnceLightRule.cs" />
+    <Compile Include="Rules\Lights\LowAndHighBeamOneTimeLightRule.cs" />
+    <Compile Include="Rules\Lights\LowAndHighBeamThirdLightRule.cs" />
+    <Compile Include="Rules\Lights\LowAndHighBeamTwiceCautionLightRule.cs" />
+    <Compile Include="Rules\Lights\LowAndHighBeamTwiceIgnoreCaution.cs" />
+    <Compile Include="Rules\Lights\LowAndHighBeamTwiceLightRule.cs" />
+    <Compile Include="Rules\Lights\LowAndHighBeamTwiceLightRule2.cs" />
+    <Compile Include="Rules\Lights\CustomLightRule.cs" />
+    <Compile Include="Rules\Lights\LowAndRightLightRule.cs" />
+    <Compile Include="Rules\Lights\LowAndLeftLightRule.cs" />
+    <Compile Include="Rules\Lights\LowBeamIgnoreCaution.cs" />
+    <Compile Include="Rules\Lights\LowBeamLightRuleIgnoreLowBeam.cs" />
+    <Compile Include="Rules\Lights\LowBeamLightRule.cs" />
+    <Compile Include="Rules\Lights\OpenCautionLightRuleOnly.cs" />
+    <Compile Include="Rules\Lights\OpenHighLightRule.cs" />
+    <Compile Include="Rules\Lights\OpenLightLowAndHighBeamLightRule.cs" />
+    <Compile Include="Rules\Lights\OpenLightRule.cs" />
+    <Compile Include="Rules\Lights\CautionLightRule.cs" />
+    <Compile Include="Rules\Lights\OpenLightRule2.cs" />
+    <Compile Include="Rules\Lights\OutlineAndCautionLightAndLowBeamRule.cs" />
+    <Compile Include="Rules\Lights\OutlineAndCautionLightRuleIgnoreLowBeam.cs" />
+    <Compile Include="Rules\Lights\OutlineAndCautionLightRule4.cs" />
+    <Compile Include="Rules\Lights\OutlineAndCautionLightRule3.cs" />
+    <Compile Include="Rules\Lights\OutlineAndCautionLightRule.cs" />
+    <Compile Include="Rules\Lights\OutlineAndCautionLightRule2.cs" />
+    <Compile Include="Rules\Lights\OutlineAndCautionLightRule5.cs" />
+    <Compile Include="Rules\Lights\OutlineAndCautionLightRule6.cs" />
+    <Compile Include="Rules\Lights\OutlineLightRuleIgnoreLowBeam.cs" />
+    <Compile Include="Rules\Lights\OutlineLightRule.cs" />
+    <Compile Include="Rules\Lights\OvertakeLightRuleLeft.cs" />
+    <Compile Include="Rules\Lights\OvertakeLightRule.cs" />
+    <Compile Include="Rules\Lights\RightLowAndHighBeamOnceLightRule.cs" />
+    <Compile Include="Rules\Lights\RightLowAndHighBeamTwiceLightRule.cs" />
+    <Compile Include="Rules\Lights\RightLowBeamLightRule.cs" />
+    <Compile Include="StaticClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Twopole.Chameleon3.Domain\Twopole.Chameleon3.Domain.csproj">
+      <Project>{d75589c4-596e-4410-bd41-5228289ae67b}</Project>
+      <Name>Twopole.Chameleon3.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TwoPole.Chameleon3.Foundation\TwoPole.Chameleon3.Foundation.csproj">
+      <Project>{3a4112b6-dd77-4b78-bdf7-cd966dad26db}</Project>
+      <Name>TwoPole.Chameleon3.Foundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TwoPole.Chameleon3.Infrastructure\TwoPole.Chameleon3.Infrastructure.csproj">
+      <Project>{3bf711a4-dc8b-44ce-9f2f-7fe7949d6985}</Project>
+      <Name>TwoPole.Chameleon3.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExamItems\GuangXi\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

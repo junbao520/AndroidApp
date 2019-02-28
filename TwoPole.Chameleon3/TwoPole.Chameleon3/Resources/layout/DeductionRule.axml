@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/global_bk"
+        android:orientation="vertical">
+        <include layout="@layout/header" />
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grayslate"
+            android:padding="5.0dip"
+            android:text="温馨提示:可以通过扣分代码、名称、内容进行模糊查找。"
+            android:textColor="@color/white"
+            android:textSize="20.0dip" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graywhite">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扣分代码或者内容"
+                android:id="@+id/textView44"
+                android:textSize="25dp" />
+
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtTxtDeductionRule"
+                android:inputType="textMultiLine"
+                android:gravity="center_vertical"
+                android:hint="请输入扣分代码或者内容"
+                android:ems="30"
+                android:layout_weight="1"
+                android:textSize="18dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询规则"
+                android:id="@+id/btnFind"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_lines_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:id="@+id/rule_list"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/whiteGray"
+                android:dividerHeight="1dip"
+                android:fadingEdge="none"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/white" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="12.0dip"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:paddingTop="0.0dip">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#66667A"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/border"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:layout_weight="0.06"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="姓名：张某"
+                    android:id="@+id/textView23"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="性别：女"
+                    android:id="@+id/textView24"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="车型：C1"
+                    android:id="@+id/textViewCarType"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="身份证：34011111980010106"
+                    android:id="@+id/textView27"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="模式："
+                        android:id="@+id/textView24"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#ffd700"
+                        android:textSize="15dp" />
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/ExamModeSpinner"
+                        android:spinnerMode="dropdown" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="地图："
+                        android:id="@+id/textView25"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#ffd700"
+                        android:textIsSelectable="false"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/MapSpiner"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:id="@+id/mgViewStartExam"
+                    android:src="@drawable/StartExam"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="-30dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_weight="1">
+                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/ExamItemTable"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1">
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:weightSum="1"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="用时:00:00:00"
+                    android:id="@+id/tvUseTime"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="分数:100"
+                    android:id="@+id/tvScore"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="速度:55"
+                    android:id="@+id/tvSpeed"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="转速:2000"
+                    android:id="@+id/tvEngineRatio"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="里程:2000"
+                    android:id="@+id/tvMileage"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="当前项目:上车准备"
+                    android:id="@+id/tvExamItem"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="档位：1"
+                    android:id="@+id/tvGear"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="陀螺仪：127.34"
+                    android:id="@+id/tvAngle"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/textView36"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffd700" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:background="#4683b5"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="扣分项目"
+                    android:textSize="15dp"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/textView2"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="扣分"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="15dp"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/textView2"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="扣分原因"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="15dp"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/textView11"
+                    android:layout_marginTop="5dp" />
+
+
+            </LinearLayout>
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.05"
+                    android:background="@drawable/border"
+                    android:weightSum="1"
+                    android:layout_marginLeft="0dp"
+                    android:id="@+id/RuleBreakTable"
+                    android:layout_marginTop="0dp">
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

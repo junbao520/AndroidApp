@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BF711A4-DC8B-44CE-9F2F-7FE7949D6985}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TwoPole.Chameleon3.Infrastructure</RootNamespace>
+    <AssemblyName>TwoPole.Chameleon3.Infrastructure</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\TwoPole.Chameleon3\packages\Autofac.4.6.2\Autofac.4.6.2\lib\netstandard1.1\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight">
+      <HintPath>..\TwoPole.Chameleon3\packages\MvvmLightLibs.5.2.0.0\lib\portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\TwoPole.Chameleon3\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="DataBaseInit\DataBase.cs" />
+    <Compile Include="DataBaseInit\DataBasedongfang.cs" />
+    <Compile Include="DataBaseInit\DataBasefengdu.cs" />
+    <Compile Include="DataBaseInit\DataBasehaikou.cs" />
+    <Compile Include="DataBaseInit\DataBaseqiongbei.cs" />
+    <Compile Include="DataBaseInit\DataBasezunyi.cs" />
+    <Compile Include="DataBaseInit\DataBaseguangxi.cs" />
+    <Compile Include="DataBaseInit\DataBasehuaian.cs" />
+    <Compile Include="DataBaseInit\DataBasejingtang.cs" />
+    <Compile Include="DataBaseInit\DataBaselongquan.cs" />
+    <Compile Include="DataBaseInit\Databasemianyang.cs" />
+    <Compile Include="DataBaseInit\DataBaseqianjiang.cs" />
+    <Compile Include="DataBaseInit\DataBaseqiqihaer.cs" />
+    <Compile Include="DataBaseInit\DataBaserongchang.cs" />
+    <Compile Include="DataBaseInit\DataBasesanya.cs" />
+    <Compile Include="DataBaseInit\DataBasewanzhou.cs" />
+    <Compile Include="DataBaseInit\DataBasexuzhou.cs" />
+    <Compile Include="Devices\CarSignal\BinaryCarSignalSeed.cs" />
+    <Compile Include="Devices\CarSignal\BluetoothCarSignalSeedBak.cs" />
+    <Compile Include="Devices\CarSignal\ICarSignalSeed.cs" />
+    <Compile Include="Devices\CarSignal\SerialCarSignalSeed.cs" />
+    <Compile Include="Devices\CarSignal\USBSerialCarSignalSeedBak.cs" />
+    <Compile Include="Devices\CarSignal\USBSerialCarSignalSeed.cs" />
+    <Compile Include="Devices\CarSignal\DefaultCarSignalProcessor.cs" />
+    <Compile Include="Devices\CarSignal\GpsAngleCalculator.cs" />
+    <Compile Include="Devices\CarSignal\JsonFileCarSignalSeed.cs" />
+    <Compile Include="Devices\CarSignal\MileageUpdater.cs" />
+    <Compile Include="Devices\CarSignal\UDPCarSignalSeedMessage.cs" />
+    <Compile Include="Devices\CarSignal\UDPCarSignalSeed.cs" />
+    <Compile Include="Devices\CarSignal\UDPHelperCarSignalSeed.cs" />
+    <Compile Include="Devices\CarSignal\TestCarSignalSeed.cs" />
+    <Compile Include="Devices\CarSignal\BluetoothCarSignalSeed.cs" />
+    <Compile Include="Devices\CarSignal\CarSignalSeedV4.cs" />
+    <Compile Include="Devices\CarSignal\ClassUtils.cs" />
+    <Compile Include="Devices\Gps\TextReaderExtensions.cs" />
+    <Compile Include="Devices\SensorProviders\Arduino\BaseCarSignalParser.cs" />
+    <Compile Include="Devices\SensorProviders\Arduino\BinaryCarSignalParser.cs" />
+    <Compile Include="Devices\SensorProviders\Arduino\CarSignalParserV4.cs" />
+    <Compile Include="Devices\SensorProviders\ICarSignalParser.cs" />
+    <Compile Include="Enum\AngleSource.cs" />
+    <Compile Include="Enum\CarState.cs" />
+    <Compile Include="Enum\CarType.cs" />
+    <Compile Include="Enum\ConnectionScheme.cs" />
+    <Compile Include="Enum\DrivingLaneState.cs" />
+    <Compile Include="Enum\ExamItemResult.cs" />
+    <Compile Include="Enum\ExamItemState.cs" />
+    <Compile Include="Enum\ExamMode.cs" />
+    <Compile Include="Enum\ExamResult.cs" />
+    <Compile Include="Enum\ExamState.cs" />
+    <Compile Include="Enum\GearConnectionMethod.cs" />
+    <Compile Include="Enum\GearSource.cs" />
+    <Compile Include="Enum\LaneState.cs" />
+    <Compile Include="Enum\MasterControlBoxVersion.cs" />
+    <Compile Include="Enum\MileageSource.cs" />
+    <Compile Include="Enum\OBDSource.cs" />
+    <Compile Include="Enum\PrepareDrivingEndFlag.cs" />
+    <Compile Include="Enum\ProviderSetting.cs" />
+    <Compile Include="Enum\RuleState.cs" />
+    <Compile Include="Enum\RuleTimeMode.cs" />
+    <Compile Include="Enum\SpeechPriority.cs" />
+    <Compile Include="Enum\TestingMode.cs" />
+    <Compile Include="Enum\TurnDirection.cs" />
+    <Compile Include="ExamItems\AutoTimer.cs" />
+    <Compile Include="ExamItems\ExamItemExecutionContext.cs" />
+    <Compile Include="ExamItems\ExamItemTriggerSource.cs" />
+    <Compile Include="ExamItems\IExamForm.cs" />
+    <Compile Include="ExamItems\IExamItem.cs" />
+    <Compile Include="ExamItems\IExamManager.cs" />
+    <Compile Include="ExamItems\IProviderFactory.cs" />
+    <Compile Include="ExamItems\TimeoutChecker.cs" />
+    <Compile Include="Extensions\AdvancedCarSignalExtensions.cs" />
+    <Compile Include="Extensions\CarSignalSetExtensions.cs" />
+    <Compile Include="Extensions\DataRowExtensions.cs" />
+    <Compile Include="Extensions\DomainExtensions.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\ExamSectionExtensions.cs" />
+    <Compile Include="Extensions\ICollectionExtensions.cs" />
+    <Compile Include="Extensions\MappingExtensions.cs" />
+    <Compile Include="Extensions\MapSetExtensions.cs" />
+    <Compile Include="Extensions\NameValueCollectionExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\ProtocolExtensions.cs" />
+    <Compile Include="Extensions\SpatialExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Implements\AdvancedCarSignal.cs" />
+    <Compile Include="Implements\CarSignalChangedMonitor.cs" />
+    <Compile Include="Implements\CarSignalReceviedHandler.cs" />
+    <Compile Include="Implements\CarSignalSet.cs" />
+    <Compile Include="Implements\ExamManager.cs" />
+    <Compile Include="Implements\ExamScore.cs" />
+    <Compile Include="Implements\ExamScoreBase.cs" />
+    <Compile Include="Infrastructure\CacheKeys.cs" />
+    <Compile Include="Infrastructure\DeductionRuleCodes.cs" />
+    <Compile Include="Infrastructure\ErrorCodes.cs" />
+    <Compile Include="Infrastructure\ExamItemCodes.cs" />
+    <Compile Include="Infrastructure\GearChangedState.cs" />
+    <Compile Include="Infrastructure\GroupNames.cs" />
+    <Compile Include="Infrastructure\MessageCodes.cs" />
+    <Compile Include="Infrastructure\Orders.cs" />
+    <Compile Include="Interfaces\IAdvancedCarSignal.cs" />
+    <Compile Include="Interfaces\IBasicDataService.cs" />
+    <Compile Include="Interfaces\ICarSignalDependency.cs" />
+    <Compile Include="Interfaces\ICarSignalProcessor.cs" />
+    <Compile Include="Interfaces\ICarSignalReceviedHandler.cs" />
+    <Compile Include="Interfaces\ICarSignalSeed.cs" />
+    <Compile Include="Interfaces\IDBCreate.cs" />
+    <Compile Include="Interfaces\ICarSignalSet.cs" />
+    <Compile Include="Interfaces\IDataService.cs" />
+    <Compile Include="Interfaces\IExamScore.cs" />
+    <Compile Include="Interfaces\IGearLineProvider.cs" />
+    <Compile Include="Interfaces\ILog.cs" />
+    <Compile Include="Interfaces\IModule.cs" />
+    <Compile Include="Log\LogManager.cs" />
+    <Compile Include="Map\Advanced\GpsPointAngleSearcher.cs" />
+    <Compile Include="Map\Advanced\GpsPointForwardSearcher.cs" />
+    <Compile Include="Map\FixedQualityMapSet.cs" />
+    <Compile Include="Map\GpsPointSearcher.cs" />
+    <Compile Include="Map\IFixedQualityMapSet.cs" />
+    <Compile Include="Map\IGpsPointSearcher.cs" />
+    <Compile Include="Map\IMapSet.cs" />
+    <Compile Include="Map\MapSet.cs" />
+    <Compile Include="Messages\ApplicationInitializedMessage.cs" />
+    <Compile Include="Messages\BinaryCarSensorMessage.cs" />
+    <Compile Include="Messages\BrokenRuleMessage.cs" />
+    <Compile Include="Messages\BthExceptionMessage.cs" />
+    <Compile Include="Messages\CarSensorMessage.cs" />
+    <Compile Include="Messages\CarStartMessage.cs" />
+    <Compile Include="Messages\CarStopMessage.cs" />
+    <Compile Include="Messages\ExamStatusMessage.cs" />
+    <Compile Include="Messages\Devices\BrakingChangedMessage.cs" />
+    <Compile Include="Messages\Devices\CarSignalReceivedMessage.cs" />
+    <Compile Include="Messages\Devices\CarStateChangedMessage.cs" />
+    <Compile Include="Messages\Devices\ClutchMessage.cs" />
+    <Compile Include="Messages\Devices\DeviceStateChangedMessages.cs" />
+    <Compile Include="Messages\Devices\DoorChangedMessage.cs" />
+    <Compile Include="Messages\Devices\EngineChangedMessage.cs" />
+    <Compile Include="Messages\Devices\FingerprintMessage.cs" />
+    <Compile Include="Messages\Devices\GearChangedMessage.cs" />
+    <Compile Include="Messages\Devices\HandBreakChangedMessage.cs" />
+    <Compile Include="Messages\Devices\IsNeutralChangedMessage.cs" />
+    <Compile Include="Messages\Devices\LightChangedMessage.cs" />
+    <Compile Include="Messages\Devices\LoudspeakerChangedMessage.cs" />
+    <Compile Include="Messages\Devices\ReleaseClutchMessage.cs" />
+    <Compile Include="Messages\Exam\ExamFinishedMessage.cs" />
+    <Compile Include="Messages\Exam\ExamFinishingMessage.cs" />
+    <Compile Include="Messages\Exam\ExamItemEndMessage.cs" />
+    <Compile Include="Messages\Exam\ExamItemMessages.cs" />
+    <Compile Include="Messages\Exam\ExamItemStateChangedMessage.cs" />
+    <Compile Include="Messages\Exam\ExamStartMessage.cs" />
+    <Compile Include="Messages\Exam\ExamTimeModeChangedMessage.cs" />
+    <Compile Include="Messages\Exam\TurnRoundMessages.cs" />
+    <Compile Include="Messages\LaneNumberChangedMessage.cs" />
+    <Compile Include="Messages\LaneStateChangedMessage.cs" />
+    <Compile Include="Messages\MapPointChangedMessage.cs" />
+    <Compile Include="Instance\Instance.cs" />
+    <Compile Include="Messages\NeutralGearChangedMessage.cs" />
+    <Compile Include="Messages\NewVideoFrameMessage.cs" />
+    <Compile Include="Messages\OvertakingFinishedMessage.cs" />
+    <Compile Include="Messages\VehicleStartingMessage.cs" />
+    <Compile Include="Messages\PullOverTriggerMessage.cs" />
+    <Compile Include="Messages\PrepareDrivingFinishedMessage.cs" />
+    <Compile Include="Messages\Rule\EndSpeedLimitMessage.cs" />
+    <Compile Include="Messages\Rule\EngineRuleMessage.cs" />
+    <Compile Include="Messages\Rule\IntoSolidLineAreaMessage.cs" />
+    <Compile Include="Messages\Rule\OutSolidLineAreaMessage.cs" />
+    <Compile Include="Messages\Rule\RuleCheckRollingSolidLinesMessage.cs" />
+    <Compile Include="Messages\Rule\RuleStateChangedMessage.cs" />
+    <Compile Include="Messages\Rule\SafetyBeltRuleMessage.cs" />
+    <Compile Include="Messages\Rule\StartSpeedLimitMessage.cs" />
+    <Compile Include="Messages\SafetyBeltMessage.cs" />
+    <Compile Include="Messages\SimulationLightsRuleMessage.cs" />
+    <Compile Include="Messages\SlowSpeedMessage.cs" />
+    <Compile Include="Messages\StartAgainMessage.cs" />
+    <Compile Include="Messages\StartOnIntersectionMessage.cs" />
+    <Compile Include="Messages\StateChangedMessage.cs" />
+    <Compile Include="Messages\SwitchGearMessage.cs" />
+    <Compile Include="Messages\TraveledDistanceChangedMessage.cs" />
+    <Compile Include="Messages\UI\ExitExamWindowMessage.cs" />
+    <Compile Include="Models\BrokenRuleInfo.cs" />
+    <Compile Include="Models\CarSensorInfo.cs" />
+    <Compile Include="Models\CarSignalInfo.cs" />
+    <Compile Include="Models\DefaultGlobalSettings.cs" />
+    <Compile Include="Models\DirectionInfo.cs" />
+    <Compile Include="Models\ExamContext.cs" />
+    <Compile Include="Models\ExamInitializationContext.cs" />
+    <Compile Include="Models\ExamItemContext.cs" />
+    <Compile Include="Models\ExamItemStateInfo.cs" />
+    <Compile Include="Models\GlobalSettings.cs" />
+    <Compile Include="Models\GpsInfo.cs" />
+    <Compile Include="Models\ObdCarSensorInfo.cs" />
+    <Compile Include="Models\ObdInfo.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rules\ICommonRule.cs" />
+    <Compile Include="Rules\ILightRule.cs" />
+    <Compile Include="Rules\IRule.cs" />
+    <Compile Include="Rules\RuleExecutionResult.cs" />
+    <Compile Include="Services\BasicDataService.cs" />
+    <Compile Include="Services\ConfigurationProvider.cs" />
+    <Compile Include="DataBaseInit\DataBasefuling.cs" />
+    <Compile Include="Services\DataService.cs" />
+    <Compile Include="Services\DefaultProviderFactory.cs" />
+    <Compile Include="Services\DefaultProviderFactoryOld.cs" />
+    <Compile Include="Services\SettingService.cs" />
+    <Compile Include="Speech\ISpeaker.cs" />
+    <Compile Include="Speech\SpeechManagerBak.cs" />
+    <Compile Include="Speech\SpeechManager.cs" />
+    <Compile Include="Triggers\CarSignalTrigger.cs" />
+    <Compile Include="Triggers\DefaultTriggerHandler.cs" />
+    <Compile Include="Triggers\DistanceTrigger.cs" />
+    <Compile Include="Triggers\ExamEndDistanceTrigger.cs" />
+    <Compile Include="Triggers\ExamEndTrigger.cs" />
+    <Compile Include="Triggers\ITrigger.cs" />
+    <Compile Include="Triggers\ITriggerHandler.cs" />
+    <Compile Include="Triggers\MapPointChangedTrigger.cs" />
+    <Compile Include="Triggers\MessageTrigger.cs" />
+    <Compile Include="Triggers\PullOverDistanceTrigger.cs" />
+    <Compile Include="Triggers\TriggerBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TwoPole.Chameleon3.Foundation\TwoPole.Chameleon3.Foundation.csproj">
+      <Project>{3a4112b6-dd77-4b78-bdf7-cd966dad26db}</Project>
+      <Name>TwoPole.Chameleon3.Foundation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Twopole.Chameleon3.Domain\Twopole.Chameleon3.Domain.csproj">
+      <Project>{d75589c4-596e-4410-bd41-5228289ae67b}</Project>
+      <Name>Twopole.Chameleon3.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TwoPole.Chameleon3\SerialAndroid\TwoPole.Chameleon3.SerialAndroid.csproj">
+      <Project>{e98599de-3ada-4534-b567-1dd1bfbaf099}</Project>
+      <Name>TwoPole.Chameleon3.SerialAndroid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TwoPole.Chameleon3\TwoPole.Chameleon3.Ch340Driver\TwoPole.Chameleon3.Ch340Driver.csproj">
+      <Project>{47371433-6db8-486d-8c65-a6c1eea14c2d}</Project>
+      <Name>TwoPole.Chameleon3.Ch340Driver</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

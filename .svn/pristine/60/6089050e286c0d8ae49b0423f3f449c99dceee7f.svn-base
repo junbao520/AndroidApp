@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <ImageView
+        android:id="@+id/ImageAds"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/bgads"
+        android:visibility="visible" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联网考试"
+        android:id="@+id/btnNetworkTest"
+        android:textSize="0dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/networkselector"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单机训练"
+        android:textSize="0dp"
+        android:id="@+id/btnSingleTraining"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/singleTrainselector"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统设置"
+        android:textSize="0dp"
+        android:id="@+id/btnSystemsettings"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/systemSetselector"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出系统"
+        android:textSize="0dp"
+        android:id="@+id/btnExitSystem"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/exitSystem"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

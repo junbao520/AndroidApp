@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:weightSum="1">
+  <Button
+        android:layout_height="60dp"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:background="#EE7600"
+      android:text="灯光模拟"
+      android:layout_marginLeft="10dp"
+      android:layout_width="0dp"
+      android:layout_marginTop="8dp"
+      android:textColor="@color/white"
+      android:layout_weight="0.16"
+      android:id="@+id/list_1_1" />
+  <Button
+android:layout_height="60dp"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@color/white"
+      android:background="#EE7600"
+      android:text="灯光模拟"
+      android:layout_width="0dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginLeft="10dp"
+      android:layout_weight="0.16"
+      android:layout_toRightOf="@+id/list_1_1"
+      android:id="@+id/list_1_2" />
+  <Button
+      android:layout_height="60dp"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@color/white"
+      android:background="#EE7600"
+      android:text="灯光模拟"
+      android:layout_width="0dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginLeft="10dp"
+      android:layout_weight="0.16"
+      android:layout_toRightOf="@+id/list_1_2"
+      android:id="@+id/list_1_3" />
+  <Button
+      android:layout_height="60dp"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@color/white"
+      android:background="#EE7600"
+      android:layout_marginTop="8dp"
+      android:text="灯光模拟"
+      android:layout_width="0dp"
+      android:layout_marginLeft="10dp"
+      android:layout_weight="0.16"
+      android:layout_toRightOf="@+id/list_1_3"
+      android:id="@+id/list_1_4" />
+  <Button
+     android:layout_height="60dp"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@color/white"
+      android:background="#EE7600"
+      android:text="灯光模拟"
+      android:layout_marginTop="8dp"
+      android:layout_width="0dp"
+      android:layout_marginLeft="10dp"
+      android:layout_weight="0.16"
+      android:layout_toRightOf="@+id/list_1_4"
+      android:id="@+id/list_1_5" />
+  <Button
+      android:layout_height="60dp"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@color/white"
+      android:background="#EE7600"
+      android:text="灯光模拟"
+      android:layout_marginTop="8dp"
+      android:layout_width="0dp"
+      android:layout_marginLeft="10dp"
+      android:layout_weight="0.16"
+      android:layout_toRightOf="@+id/list_1_5"
+      android:id="@+id/list_1_6" />
+</LinearLayout>

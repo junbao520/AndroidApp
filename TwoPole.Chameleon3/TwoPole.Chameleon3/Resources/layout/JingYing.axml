@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#f0f0f0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ImageFinger"
+            android:src="@drawable/head5"
+            android:layout_gravity="center_horizontal" />
+       <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borderGroupBox">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:text="考试指令"
+               android:id="@+id/textView23"
+               android:layout_marginRight="10dp"
+               android:textColor="#0000ff"
+               android:textSize="15dp" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="开始考试"
+            android:id="@+id/btnStartExam"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="结束考试"
+            android:id="@+id/btnEndExam"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="关闭程序"
+            android:id="@+id/btnReturnHome"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="考试地图"
+            android:id="@+id/textView39"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MapSpiner"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="考试模式"
+            android:id="@+id/textView39"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ExamModeSpinner"
+            android:layout_gravity="center_horizontal" />
+       </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borderGroupBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="考生信息"
+                    android:id="@+id/textView23"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#0000ff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+               <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名:练习"
+                   android:layout_weight="1"
+                android:id="@+id/textView40"
+                android:textColor="#2B2B2B"
+                   android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次数:1/2"
+                    android:textColor="#2B2B2B"
+                    android:layout_weight="1"
+                    android:id="@+id/textView40"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="代理人:练习考生"
+                    android:textColor="#2B2B2B"
+                    android:id="@+id/textView40"
+                    android:textSize="18dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分数:100 "
+                    android:layout_weight="1"
+                    android:id="@+id/tvScore"
+                    android:textColor="#ff0000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编号:001"
+                    android:layout_weight="1"
+                    android:textColor="#2B2B2B"
+                    android:id="@+id/textView40"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="证件:00000000 "
+                    android:textColor="#2B2B2B"
+                    android:id="@+id/textView40"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borderGroupBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="车辆状态"
+                    android:id="@+id/textView23"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#0000ff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="里程:0.00公里 速度:55KM/h 转速:2000转 方向:192.34"
+                    android:layout_weight="2"
+                    android:id="@+id/tvSensorInfo"
+                    android:textColor="#ff0000"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tvAuthInfo"
+                    android:textColor="#ff0000"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="500dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/borderGroupBox"
+                android:layout_width="fill_parent"
+                android:layout_height="500dp"
+                android:layout_weight="1.2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="考试记录"
+                    android:id="@+id/textView23"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#0000ff"
+                    android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="3.0dip">
+
+                    <ListView
+                        android:id="@+id/BrokenRule_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@color/whiteGray"
+                        android:dividerHeight="1dip"
+                        android:fadingEdge="none"
+                        android:paddingTop="0.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/borderGroupBox"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2">
+
+                <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="车辆状态"
+                    android:id="@+id/textView23"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#0000ff"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="车门"
+                        android:id="@+id/btnDoor"
+                        android:textSize="18dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="发动机"
+                        android:id="@+id/btnEngine"
+                        android:textSize="18dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="手刹"
+                        android:id="@+id/btnHandBreak"
+                        android:textSize="18dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="刹车  "
+                        android:id="@+id/btnBreake"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="离合"
+                        android:layout_weight="1"
+                        android:id="@+id/btnCluth"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="安全带"
+                        android:layout_weight="1"
+                        android:id="@+id/btnSafeBelt"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="喇叭"
+                        android:layout_weight="1"
+                        android:id="@+id/btnSpeaker"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="左转"
+                        android:layout_weight="1"
+                        android:id="@+id/btnTurnLeftLight"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="右转"
+                        android:layout_weight="1"
+                        android:id="@+id/btnTurnRightLight"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="示廓"
+                        android:layout_weight="1"
+                        android:id="@+id/btnOutLineLight"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="远光"
+                        android:layout_weight="1"
+                        android:id="@+id/btnHighBeamLight"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="近光  "
+                        android:id="@+id/btnLowBeamLight"
+                        android:textSize="18dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="雾灯"
+                        android:layout_weight="1"
+                        android:id="@+id/btnFogLight"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="空挡  "
+                        android:layout_weight="1"
+                        android:id="@+id/btnNeturl"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/borderGroupBox"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.8">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="考试指令"
+                    android:id="@+id/textView23"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#0000ff"
+                    android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_weight="1">
+                    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/ExamItemTable"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="1">
+                </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/global_bk"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+      <include layout="@layout/header" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="加减档开始语音"
+            android:textColor="#ff0000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtModifiedGearVoice" />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="加减档结束语音"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView9"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtModifiedGearEndVoice"
+            android:layout_weight="0.02" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="项目距离"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView16"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtModifiedGearDrivingDistance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="项目时间"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView17"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtModifiedGearTimeout"
+            android:layout_weight="0.02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="档位维持时间"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView18"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtModifiedGearIgnoreSeconds"
+            android:layout_weight="0.02" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放档位语音"
+            android:id="@+id/chkModifiedGearIsPlayGearVoice"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放操作语音"
+            android:id="@+id/chkModifiedGearIsPlayActionVoice"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+
+			 <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="操作完成即结束项目"
+            android:id="@+id/chkModifiedGearEndFlag"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="加减档流程请以-隔开,例如2-3-4-3"
+            android:textColor="#ff0000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView"
+            android:layout_weight="0.02" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="第一种"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtModifiedGearFlowOne" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="第二种"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtModifiedGearFlowTwo" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="第三种"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtModifiedGearFlowThree" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="加减档操作流程语音"
+            android:textColor="#ff0000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView"
+            android:layout_weight="0.02" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="一档加到二挡"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="请加到二档"
+            android:id="@+id/edtTxtModifiedGearAddOneTwo" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="二档加到三挡"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="请加到三档"
+            android:id="@+id/edtTxtModifiedGearAddTwoThree" />
+    </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10.0dip"
+              android:singleLine="true"
+              android:text="加减档操作流程语音"
+              android:textColor="#ff0000"
+              android:textSize="18.0dip"
+              android:id="@+id/textView"
+              android:layout_weight="0.02" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="三挡加到四档"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="请加到4档"
+            android:id="@+id/edtTxtModifiedGearAddThreeFour" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="四档加到五档"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="请加到5档"
+            android:id="@+id/edtTxtModifiedGearAddFourFive" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="加减档操作流程语音"
+            android:textColor="#ff0000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView"
+            android:layout_weight="0.02" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="二档减到一档"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="请减到一档"
+            android:id="@+id/edtTxtModifiedGearSubTwoOne" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="三档减到二档"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="请减到2档"
+            android:id="@+id/edtTxtModifiedGearSubThreeTwo" />
+    </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10.0dip"
+              android:singleLine="true"
+              android:text="加减档操作流程语音"
+              android:textColor="#ff0000"
+              android:textSize="18.0dip"
+              android:id="@+id/textView"
+              android:layout_weight="0.02" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="四档减到三档"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="请减到3档"
+            android:id="@+id/edtTxtModifiedGearSubFourThree" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="五档减到四档"
+            android:textColor="#ff000000"
+            android:textSize="18.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:text="请减到四档"
+            android:id="@+id/edtTxtModifiedGearSubFiveFour" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

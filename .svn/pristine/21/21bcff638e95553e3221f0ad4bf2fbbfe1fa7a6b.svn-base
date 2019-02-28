@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A4112B6-DD77-4B78-BDF7-CD966DAD26DB}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TwoPole.Chameleon3.Foundation</RootNamespace>
+    <AssemblyName>TwoPole.Chameleon3.Foundation</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\IPriorityQueue.cs" />
+    <Compile Include="Collections\PriorityQueue.cs" />
+    <Compile Include="DisposableBase.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\MappingExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\RepositoryExtensions.cs" />
+    <Compile Include="Extensions\SocketExtensions.cs" />
+    <Compile Include="Extensions\TimeoutEx.cs" />
+    <Compile Include="Gps\Extensions\GpsExtensions.cs" />
+    <Compile Include="Gps\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Gps\GpsReading.cs" />
+    <Compile Include="Gps\NmeaSentences\AvrData.cs" />
+    <Compile Include="Gps\NmeaSentences\GgaData.cs" />
+    <Compile Include="Gps\NmeaSentences\GsaData.cs" />
+    <Compile Include="Gps\NmeaSentences\GsvData.cs" />
+    <Compile Include="Gps\NmeaSentences\HdtData.cs" />
+    <Compile Include="Gps\NmeaSentences\MssData.cs" />
+    <Compile Include="Gps\NmeaSentences\RmcData.cs" />
+    <Compile Include="Gps\NmeaSentences\VgkData.cs" />
+    <Compile Include="Gps\NmeaSentences\VtgData.cs" />
+    <Compile Include="Gps\NovAtel\HgaData.cs" />
+    <Compile Include="Gps\NovAtel\NAFixStatus.cs" />
+    <Compile Include="Gps\NovAtel\NtrData.cs" />
+    <Compile Include="Gps\NovAtel\TextReaderExtensions.cs" />
+    <Compile Include="Gps\NovAtel\UtmData.cs" />
+    <Compile Include="Gps\SimpleTypes\DifferenceCorrection.cs" />
+    <Compile Include="Gps\SimpleTypes\Direction.cs" />
+    <Compile Include="Gps\SimpleTypes\Elevation.cs" />
+    <Compile Include="Gps\SimpleTypes\FixMode.cs" />
+    <Compile Include="Gps\SimpleTypes\FixType.cs" />
+    <Compile Include="Gps\SimpleTypes\GeoidalSeparation.cs" />
+    <Compile Include="Gps\SimpleTypes\GpsMode.cs" />
+    <Compile Include="Gps\SimpleTypes\MagneticVariation.cs" />
+    <Compile Include="Gps\SimpleTypes\Position.cs" />
+    <Compile Include="Gps\SimpleTypes\PositionalDegrees.cs" />
+    <Compile Include="Gps\SimpleTypes\Quality.cs" />
+    <Compile Include="Gps\SimpleTypes\Satellite.cs" />
+    <Compile Include="Gps\SimpleTypes\Status.cs" />
+    <Compile Include="Gps\SimpleTypes\UnitType.cs" />
+    <Compile Include="Network\SocketAsyncEventArgsPool.cs" />
+    <Compile Include="Providers\IConfigurationProvider.cs" />
+    <Compile Include="Providers\IProvider.cs" />
+    <Compile Include="Providers\ISettings.cs" />
+    <Compile Include="Providers\ISettingService.cs" />
+    <Compile Include="Providers\ProviderFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spatial\Coordinate.cs" />
+    <Compile Include="Spatial\GeoHelper.cs" />
+    <Compile Include="Spatial\LatLon.cs" />
+    <Compile Include="Spatial\MapPoint.cs" />
+    <Compile Include="Spatial\MapPointTypeInfo.cs" />
+    <Compile Include="Spatial\Point.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Twopole.Chameleon3.Domain\Twopole.Chameleon3.Domain.csproj">
+      <Project>{d75589c4-596e-4410-bd41-5228289ae67b}</Project>
+      <Name>Twopole.Chameleon3.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

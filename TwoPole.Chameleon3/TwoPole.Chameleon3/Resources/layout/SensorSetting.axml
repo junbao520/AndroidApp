@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/global_bk"
+    android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+            <include layout="@layout/header"
+                android:id="@+id/include" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:layout_width="1000dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                android:id="@+id/linearLayout">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="信号来源"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0dip"
+                        android:id="@+id/textView4"
+                        android:layout_marginTop="15dp" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <RadioButton
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="模拟数据"
+                            android:textColor="@color/black"
+                            android:id="@+id/radSignalSourceSimulatedData" />
+
+                        <RadioButton
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="USB"
+                            android:textColor="@color/black"
+                            android:id="@+id/radSignalSourceUSB" />
+
+                        <RadioButton
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="WifiUdp"
+                            android:textColor="@color/black"
+                            android:id="@+id/radSignalSourceWifiUdp" />
+
+                        <RadioButton
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="蓝牙"
+                            android:textColor="@color/black"
+                            android:id="@+id/radSignalSourceBluetooth" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="搜索蓝牙"
+                            android:id="@+id/btnSearchBluetooth" />
+
+                        <EditText
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:ems="10"
+                            android:id="@+id/edtTxtBluetoothAddress"
+                            android:text="蓝牙地址" />
+
+                        <Spinner
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinnerBluetooth"
+                            android:layout_weight="0.05" />
+
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:singleLine="true"
+                            android:text="角度"
+                            android:textColor="#ff000000"
+                            android:textSize="15.0dip"
+                            android:id="@+id/textView4" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GPS"
+                            android:textColor="@color/black"
+                            android:id="@+id/radAngleSourceGps"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="陀螺仪"
+                            android:textColor="@color/black"
+                            android:id="@+id/radAngleSourceGyroscope"
+                            android:layout_marginLeft="15dp" />
+
+
+
+
+                    </RadioGroup>
+
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="里程"
+                            android:textColor="#ff000000"
+                            android:textSize="15.0dip"
+                            android:id="@+id/textView4"
+                            android:layout_marginLeft="15dp" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GPS"
+                            android:textColor="@color/black"
+                            android:id="@+id/radMileageSourceGps"
+                            android:layout_marginLeft="15dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OBD"
+                            android:textColor="@color/black"
+                            android:id="@+id/radMileageSourceOBD"
+                            android:layout_marginLeft="15dp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="车速"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0dip"
+                        android:id="@+id/textView4"
+                        android:layout_marginTop="15dp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GPS"
+                            android:textColor="@color/black"
+                            android:id="@+id/radSpeedSourceGps"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OBD     "
+                            android:textColor="@color/black"
+                            android:id="@+id/radSpeedSourceOBD"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+
+                    </RadioGroup>
+
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="转速"
+                            android:textColor="#ff000000"
+                            android:textSize="15.0dip"
+                            android:id="@+id/textView4"
+                            android:layout_marginLeft="15dp" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="脉冲"
+                            android:textColor="@color/black"
+                            android:id="@+id/radEngineRpmPlus"
+                            android:layout_marginLeft="15dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OBD"
+                            android:textColor="@color/black"
+                            android:id="@+id/radEngineRpmOBD"
+                            android:layout_marginLeft="15dp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+
+
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:singleLine="true"
+                            android:text="档位"
+                            android:textColor="#ff000000"
+                            android:textSize="15.0dip"
+                            android:id="@+id/textView4" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="档显"
+                            android:textColor="@color/black"
+                            android:id="@+id/radGearSourceGearDisplay"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="转速比"
+                            android:textColor="@color/black"
+                            android:id="@+id/radGearSourceRatio"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OBD"
+                            android:textColor="@color/black"
+                            android:id="@+id/radGearSourceOBD"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="空挡传感器"
+                            android:id="@+id/chkNeutral"
+                            android:textColor="@color/black"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/spinnerNeturalAddress"
+                            android:layout_weight="1" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="车型"
+                            android:textColor="#ff000000"
+                            android:textSize="15.0dip"
+                            android:id="@+id/textView4"
+                            android:layout_marginLeft="10dp" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="逸动"
+                            android:textColor="@color/black"
+                            android:id="@+id/radCarTypeYiDong"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="新桑"
+                            android:textColor="@color/black"
+                            android:id="@+id/radCarTypeXinShang"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="新捷达"
+                            android:textColor="@color/black"
+                            android:id="@+id/radCarTypeXinJieDa"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="爱丽舍"
+                            android:textColor="@color/black"
+                            android:id="@+id/radCarTypeAiLiShe"
+                            android:layout_weight="0.02"
+                            android:layout_marginLeft="15dp" />
+
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="一挡转速比区间"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0dip"
+                        android:id="@+id/textView4"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/edtTxtGearOneLowEngineRpm"
+                        android:layout_marginLeft="15dp" />
+
+                    <EditText
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/edtTxtGearOneHighEngineRpm"
+                        android:layout_marginLeft="15dp" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="学习"
+                        android:id="@+id/btnStudyGearOne"
+                        android:layout_marginLeft="15dp" />
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.50"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:singleLine="true"
+                    android:text="二挡转速比区间"
+                    android:textColor="#ff000000"
+                    android:textSize="15.0dip"
+                    android:id="@+id/textView4"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edtTxtGearTwoLowEngineRpm"
+                    android:layout_marginLeft="15dp" />
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edtTxtGearTwoHighEngineRpm"
+                    android:layout_marginLeft="15dp" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="学习"
+                    android:id="@+id/btnStudyGearTwo"
+                    android:layout_marginLeft="15dp" />
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="三挡转速比区间"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0dip"
+                        android:id="@+id/textView4"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/edtTxtGearThreeLowEngineRpm"
+                        android:layout_marginLeft="15dp" />
+
+
+                    <EditText
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/edtTxtGearThreeHighEngineRpm"
+                        android:layout_marginLeft="15dp" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="学习"
+                        android:id="@+id/btnStudyGearThree"
+                        android:layout_marginLeft="15dp" />
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.50"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:singleLine="true"
+                    android:text="四挡转速比区间"
+                    android:textColor="#ff000000"
+                    android:textSize="15.0dip"
+                    android:id="@+id/textView4"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edtTxtGearFourLowEngineRpm"
+                    android:layout_marginLeft="15dp" />
+
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edtTxtGearFourHighEngineRpm"
+                    android:layout_marginLeft="15dp" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="学习"
+                    android:id="@+id/btnStudyGearFour"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.50"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:singleLine="true"
+                        android:text="五挡转速比区间"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0dip"
+                        android:id="@+id/textView4"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/edtTxtGearFiveLowEngineRpm"
+                        android:layout_marginLeft="15dp" />
+
+
+                    <EditText
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/edtTxtGearFiveHighEngineRpm"
+                        android:layout_marginLeft="15dp" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="学习"
+                        android:id="@+id/btnStudyGearFive"
+                        android:layout_marginLeft="15dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+</ScrollView>

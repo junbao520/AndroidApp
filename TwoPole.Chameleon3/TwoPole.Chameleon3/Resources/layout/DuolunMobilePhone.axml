@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="@android:color/holo_blue_bright">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="得        分"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="100"
+                android:id="@+id/tvScore"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="考试地图"
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp" />
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:id="@+id/MapSpiner"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="考试模式"
+                android:id="@+id/textView31"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp" />
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/ExamModeSpinner"
+                android:spinnerMode="dropdown"
+                android:textSize="20dp"
+                android:touchscreenBlocksFocus="false"
+                android:transitionGroup="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="@android:color/holo_blue_bright">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="开始时间"
+                android:id="@+id/textView21"
+                android:gravity="center"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="00:00:00"
+                android:id="@+id/tvStartTime"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="用       时"
+                android:id="@+id/textView211"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="00:00:00"
+                android:id="@+id/tvUseTime"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="当前项目"
+                android:id="@+id/textView311"
+
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="上车准备"
+                android:id="@+id/tvExamItem"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="@android:color/holo_blue_bright">
+
+        </LinearLayout>
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="165dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="0.05"
+                android:weightSum="1"
+                android:layout_marginLeft="0dp"
+                android:id="@+id/RuleBreakTable"
+                android:layout_marginTop="0dp">
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:weightSum="1"
+            android:background="@drawable/title2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="项目列表"
+                    android:id="@+id/textView11111"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="速度：55"
+                    android:id="@+id/tvSpeed"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="转速：2000"
+                    android:id="@+id/tvEngineRatio"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="里程：2000"
+                    android:id="@+id/tvMileage"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/ExamItemTable"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:background="#99b4d1"
+                android:layout_marginTop="-30dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="开始考试"
+                    android:id="@+id/mgViewStartExam"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ks"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="130dp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="人工评判"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/button2"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/rg"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="130dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <Button
+      android:id="@+id/MyButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/Hello" />
+  <Button
+      android:id="@+id/btnBluetoothDataReceive"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="BluetoothDataReceive" />
+  <Button
+    android:id="@+id/btnConnectBluetooth"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ConnectBluetooth" />
+
+  <Button
+  android:id="@+id/btnUDPSocket"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:text="UDPConnect" />
+  <Button
+      android:id="@+id/btnCarSensor"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="CarSensor" />
+  <Button
+    android:id="@+id/btnDuolun"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Duolun" />
+  <Button
+   android:id="@+id/btnMap"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:text="Map" />
+  <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/txtViewShow" />
+
+</LinearLayout>

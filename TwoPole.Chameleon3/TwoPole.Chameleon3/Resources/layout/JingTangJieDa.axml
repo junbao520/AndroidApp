@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#66667A"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:background="#f0f0f0"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SDT-2009 智能化路考仪"
+            android:id="@+id/textView23"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:background="#b46137"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/borderGroupBox"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/borderGroupBox"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="选择练习模式"
+                            android:id="@+id/textView23"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#0000ff"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radExamItem"
+                                android:textSize="20dp" />
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="按项目："
+                                android:id="@+id/textView24"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#000000"
+                                android:textSize="20dp" />
+                            <Spinner
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ExamItemSpiner"
+                                android:spinnerMode="dropdown" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:orientation="horizontal" >
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radMap"
+                                android:textSize="20dp" />
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="按路线："
+                                android:id="@+id/textView25"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#000000"
+                                android:textSize="20dp" />
+
+                            <Spinner
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/MapSpiner"
+                                android:spinnerMode="dropdown" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="考试时长:00:00:37"
+                            android:id="@+id/tvUseTime"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="考试里程:0"
+                            android:id="@+id/tvMileage"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关绕车一周"
+                            android:id="@+id/chkClosePrepareDriving"
+                            android:textSize="20dp"
+                            android:textColor="#000000" />
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="55dp"
+                            android:text="开始"
+                            android:id="@+id/btnStartExam"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="20dp" />
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="55dp"
+                            android:text="模拟靠边停车"
+                            android:id="@+id/btnPullOver"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关模拟灯光"
+                            android:id="@+id/chkCloseSimulationLights"
+                            android:textSize="20dp"
+                            android:textColor="#000000" />
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="55dp"
+                            android:text="结束"
+                            android:id="@+id/btnEndExam"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="不及格结束"
+                            android:id="@+id/chkExamFailEnd"
+                            android:textSize="20dp"
+                            android:textColor="#000000" />
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="55dp"
+                            android:text="上车准备完成"
+                            android:id="@+id/btnFinishPrepareDriving"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:background="@drawable/borderGroupBox"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="错误列表"
+                    android:id="@+id/textView23"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#0000ff"
+                    android:textSize="20dp" />
+
+                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="2dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_weight="0.05"
+                        android:weightSum="1"
+                        android:layout_marginLeft="0dp"
+                        android:id="@+id/RuleBreakTable"
+                        android:layout_marginTop="0dp">
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

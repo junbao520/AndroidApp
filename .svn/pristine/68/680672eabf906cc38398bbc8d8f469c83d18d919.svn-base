@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.05"
+               android:weightSum="1" >
+  <TwoPole.Chameleon3.TableTextView
+      android:id="@+id/list_1_1"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="0dp"
+        android:textSize="@dimen/exam_fontsize"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="扣分项目"
+      android:gravity="center" />
+  <TwoPole.Chameleon3.TableTextView
+    android:id="@+id/list_1_2"
+    android:layout_width="100dp"
+      android:textSize="@dimen/exam_fontsize"
+    android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="扣分项目"
+    android:layout_toRightOf="@+id/list_1_1"
+    android:gravity="center" />
+  <TwoPole.Chameleon3.TableTextView
+    android:id="@+id/list_1_3"
+    android:layout_width="600dp"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/exam_fontsize"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:layout_toRightOf="@+id/list_1_2"
+    android:text="扣分项目"
+   android:gravity="center" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+﻿佛山顺德（刘）：
+程序名：迈使惊
+程序包名称：TwoPole.Chameleon3.ShunDe
+主界面：MainActivityYunFu
+ UIType = SystemUIType.SanLianGuangDong,
+ DataBaseName = DataBase.YunFu,
+
+
+
+ 海南 20181024
+ 现在海口单独使用海口数据库（因为海口由精英改为三联考场）
+
+ 三亚和东方，琼北使用一个数据库（三亚数据库），都是用同一个版本（三亚版本）。

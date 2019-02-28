@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/linearLayout1"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/voice_main_bg_new">
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="参数设置"
+      android:textSize="0dp"
+      android:id="@+id/btnParameterSettings"
+      android:layout_marginTop="120dp"
+      android:background="@drawable/parameterSettingsselector"
+      android:layout_gravity="center_horizontal" />
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="车辆状态"
+    android:textSize="0dp"
+    android:id="@+id/btncarStatus"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/carStatusselector"
+    android:layout_gravity="center_horizontal" />
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="线路规划"
+      android:textSize="0dp"
+      android:id="@+id/btnLinePlan"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/linePlanselector"
+      android:layout_gravity="center_horizontal" />
+  <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="灯光模拟"
+     android:textSize="0dp"
+     android:id="@+id/btnLightingSimulation"
+     android:layout_marginTop="10dp"
+     android:background="@drawable/lightingsimulationselector"
+     android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

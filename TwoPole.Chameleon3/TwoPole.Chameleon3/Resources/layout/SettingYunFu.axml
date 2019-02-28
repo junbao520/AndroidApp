@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="6"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/mgViewDataConnection"
+                android:src="@drawable/connection_icon"
+                android:scaleType="fitCenter"
+                android:layout_weight="5.0" />
+            <TextView
+                android:textSize="35dp"
+                android:textColor="@color/color_black"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:text="数据连接"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="6"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5.0"
+                android:id="@+id/mgViewGear"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gear_icon" />
+            <TextView
+                android:textSize="35dp"
+                android:textColor="@color/color_black"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:text="档位"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="6"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/mgViewChecking"
+                android:src="@drawable/checking_icon"
+                android:scaleType="fitCenter"
+                android:layout_weight="5.0" />
+            <TextView
+                android:textSize="35dp"
+                android:textColor="@color/color_black"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:text="传感器自检"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="6"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/mgViewInfo"
+                android:src="@drawable/info_icon"
+                android:scaleType="fitCenter"
+                android:layout_weight="5.0" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="实时信息"
+                android:textColor="@color/color_black"
+                android:textSize="35dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="6"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/mgViewDevice"
+                android:src="@drawable/device_icon"
+                android:scaleType="fitCenter"
+                android:layout_weight="5.0" />
+            <TextView
+                android:textSize="35dp"
+                android:textColor="@color/color_black"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:text="终端信息"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="6"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/mgLight"
+                android:src="@drawable/dan_ji_judge_start_night"
+                android:scaleType="fitCenter"
+                android:layout_weight="5.0" />
+            <TextView
+                android:textSize="35dp"
+                android:textColor="@color/color_black"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:text="灯光模拟"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

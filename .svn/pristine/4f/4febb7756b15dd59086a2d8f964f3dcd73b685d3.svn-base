@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top"
+    android:gravity="top"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip">
+
+    <LinearLayout
+        android:id="@+id/dialog_generic_layout_root"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60.0dip"
+        android:background="@drawable/bg_popwindow"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dialog_generic_layout_top"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/dialog_generic_layout_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip">
+
+                <TextView
+                    android:id="@+id/dialog_generic_htv_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="2.0dip"
+                    android:paddingRight="2.0dip"
+                    android:paddingTop="8.0dip"
+                    android:shadowDx="0.0"
+                    android:shadowDy="-1.0"
+                    android:shadowRadius="1.0"
+                    android:soundEffectsEnabled="true"
+                    android:text="操作确认"
+                    android:textColor="@color/blue"
+                    android:textSize="20.0dip" />
+
+                <View
+                    android:id="@+id/dialog_generic_view_titleline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:background="@color/table_item_line_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialog_generic_layout_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip">
+
+                <TextView
+                    android:id="@+id/dialog_confirm_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip"
+                    android:text="提示内容"
+                    android:textColor="@color/black"
+                    android:textSize="20.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_generic_layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="12.0dip"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:paddingTop="0.0dip">
+
+            <Button
+                android:id="@+id/dialog_generic_btn_button1"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_default"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/dialog_generic_btn_button2"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_main"
+                android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

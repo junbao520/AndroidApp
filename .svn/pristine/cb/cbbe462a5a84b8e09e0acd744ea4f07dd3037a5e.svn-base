@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+                android:background="@color/global_bk"
+              android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="开始语音"
+            android:textColor="#ff0000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtStraightDrivingVoice" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="结束语音"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView9"
+            android:layout_weight="0.02" />
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtStraightDrivingEndVoice"
+            android:layout_weight="0.02" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="项目距离"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView16"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtStraightDrivingDistance" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:text="准备距离"
+                android:textColor="#ff000000"
+                android:textSize="15.0dip"
+                android:id="@+id/textView17"
+                android:layout_weight="0.02" />
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtTxtStraightDrivingPrepareDistance"
+                android:layout_weight="0.02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="角度"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView17"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/edtTxtStraightDrivingMaxOffsetAngle"
+            android:layout_weight="0.02"
+            android:inputType="numberDecimal" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="最低速度"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtStraightDrivingSpeedMinLimit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="最高速度"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView9" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/edtTxtStraightDrivingSpeedMaxLimit"
+            android:layout_weight="0.02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="达到一次速度"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView16"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtStraightDrivingReachSpeed" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

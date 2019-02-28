@@ -1,0 +1,161 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TwoPole.Chameleon3.Domain;
+
+namespace TwoPole.Chameleon3.Infrastructure
+{
+    public static class ExamItemCodes
+    {
+        public const string CommonExamItem = "40000";               //通用检测规则
+        public const string PrepareDriving = "40100";               //上车准备
+        public const string Start = "40200";                        //起步
+        public const string StraightDriving = "40300";              //直线行驶
+        public const string ModifiedGear = "40400";                 //加减挡位操作
+        //public const string AddGear = "40410";                      //加档操作
+        public const string ChangeLanes = "40500";                  //变更车道
+        public const string PullOver = "40600";                     //靠边停车
+        public const string StraightThrough = "40700";              //直行通过路口
+        public const string TurnLeft = "40800";                     //路口左转弯
+        public const string TurnRight = "40900";                    //路口右转弯
+        public const string PedestrianCrossing = "41000";           //人行横道线
+        public const string PedestrianCrossingHasPeople = "41010";  //人行横道线, 有行人通过
+        public const string SchoolArea = "41100";                   //通过学校区域
+        public const string BusArea = "41200";                      //通过公共汽车区域
+        public const string Meeting = "41300";                      //会车
+        public const string Overtaking = "41400";                   //超车
+        public const string TurnRound = "41500";                    //掉头
+        public const string Light = "41600";                        //灯光模拟
+        public const string SharpTurn = "41700";                    //急弯坡路
+        public const string Roundabout = "41800";                   //环岛
+        public const string NextItem = "41900";                     //下一个项目
+        public const string SpeedLimit = "42000";                   //限速
+        public const string SlowSpeed = "42100";                    //减速让行
+        public const string OvertakeChangeMeeting = "42200";        //超变会
+        //public const string UnfreezeSpeedLimit = "42100";         //解除限速
+        public const string EnterDepart = "42500"; //进入发车区
+        public const string LeaveDepart = "42600"; //离开发车区
+        public const string ArchBridge = "42700"; //拱桥
+        public const string TempPark = "42800"; //临时停车
+        public const string WavedCurve = "42900";//起伏弯道
+        public const string TurnRoundPlease = "43000";//请掉头语音点
+        public const string TurnRightVoice = "40801";//右转语音点
+        public const string TurnLeftVoice = "40802";//左转语音点
+
+       #region 科目二考试项目
+
+       public const string Subject2CommonExamItem = "10100";     //科目二通用检测规则
+       public const string ReverseParking = "20100";             //倒车入库
+       public const string SlopeWayParkingAndStarting = "20300"; //坡道停车起步
+       public const string ParallelParking = "20400";            //侧方位停车
+       public const string UnilateralBridge = "20500";           //单边桥
+       public const string CurveDriving = "20600";               //曲线行驶
+       public const string QuarterTurning = "20700";             //直角转弯
+       public const string ContinuousObstacle = "20900";         //连续障碍
+       public const string RoughRoadDriving = "21000";           //起伏路行驶
+       public const string NarrowRoadTurnAround = "21100";       //窄路掉头
+       public const string ExpresswayDriving = "21200";          //高速公路行驶
+       public const string ContinuousSharpTurn = "21300";        //连续急弯山路行驶
+       public const string TunnelDriving = "21400";              //隧道行驶
+       public const string RainyDayDriving = "21500";            //雨雾天行驶
+       public const string WetSection = "21600";                 //湿滑路段
+
+       #endregion
+        public static string GetExamItemCode(MapPointType pointType)
+        {
+            switch (pointType)
+            {
+                case MapPointType.TurnLeft:
+                    return TurnLeft;
+                case MapPointType.StraightThrough:
+                    return StraightThrough;
+                case MapPointType.TurnRight:
+                    return TurnRight;
+                case MapPointType.SharpTurn:
+                    return SharpTurn;
+                case MapPointType.PedestrianCrossing:
+                    return PedestrianCrossing;
+                case MapPointType.SchoolArea:
+                    return SchoolArea;
+                case MapPointType.BusArea:
+                    return BusArea;
+                case MapPointType.StraightDriving:
+                    return StraightDriving;
+                case MapPointType.Overtaking:
+                    return Overtaking;
+                case MapPointType.ChangeLines:
+                    return ChangeLanes;
+                case MapPointType.Meeting:
+                    return Meeting;
+                case MapPointType.PullOver:
+                    return PullOver;
+                case MapPointType.TurnRound:
+                    return TurnRound;
+                case MapPointType.ModifiedGear:
+                    return ModifiedGear;
+                //case MapPointType.AddGear:
+                //    return AddGear;
+                case MapPointType.Roundabout:
+                    return Roundabout;
+                case MapPointType.NextItem:
+                    return NextItem;
+                case MapPointType.StartSpeedLimit:
+                    return SpeedLimit;
+                case MapPointType.PedestrianCrossingHasPeople:
+                    return PedestrianCrossingHasPeople;
+                case MapPointType.SlowSpeed:
+                    return SlowSpeed;
+                case MapPointType.OvertakeChangeMeeting:
+                    return OvertakeChangeMeeting;
+                case MapPointType.TurnRightVoice:
+                    return TurnRightVoice;
+
+                default:
+                    return string.Empty;
+            }
+        }
+
+
+        /// <summary>
+        /// 从超车，变更车道，会车,直线行驶中随机选取一下项目执行
+        /// </summary>
+        /// <returns></returns>
+        private static List<string> triggerExamItems = new List<string>();
+        private static List<string> _tempItems = new List<string>();
+        public static string GetRandomExamItemFromOvertakeChangeMeeting()
+        {
+            var _items = new string[] { 
+                ExamItemCodes.ChangeLanes,ExamItemCodes.Meeting
+            };
+
+            //进行初始化重置临时列表
+            if (_tempItems.Count <= 0)
+            {
+                foreach (var item in _items)
+                {
+                    _tempItems.Add(item);
+                }
+            }
+
+            //进行初始化重置触发项目
+            if (triggerExamItems.Count == _items.Length)
+                triggerExamItems.Clear();
+
+
+            Random r = new Random();
+            int _index = r.Next(0, _tempItems.Count - 1);
+            while (triggerExamItems.Contains(_tempItems[_index]))
+            {
+               _index=r.Next(0, _tempItems.Count-1);
+            }
+
+            var _examItem = _tempItems[_index];
+            triggerExamItems.Add(_examItem);
+            _tempItems.Remove(_examItem);
+
+            return _examItem;
+        }
+    }
+}

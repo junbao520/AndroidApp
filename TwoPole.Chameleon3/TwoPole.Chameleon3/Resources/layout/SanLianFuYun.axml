@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ff132b51"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="5.0">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/sanlianborder"
+            android:padding="3.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:layout_weight="4.5">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/layout_Road"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="流水号： "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L00000000011"
+                        android:textColor="@color/Green" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓    名： "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:id="@+id/tv_Student_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张某某"
+                        android:textColor="@color/Green" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="性    别： "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Green"
+                        android:text="女" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="类    型： "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Green"
+                        android:text="初学" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="状    态： "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:id="@+id/tv_Exam_Status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Green"
+                        android:text="未在考试" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="得    分： "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:id="@+id/tv_Student_Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Green"
+                        android:text="100" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="线    路： "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:textColor="@color/Green"
+                        android:id="@+id/tv_Road"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未知" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="里    程： "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:id="@+id/tv_Li"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0米"
+                        android:textColor="@color/Green" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开    始： "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:id="@+id/tv_Start_Time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00:00"
+                        android:textColor="@color/Green" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用    时： "
+                        android:textColor="@color/White" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:id="@+id/tv_Yong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00:00"
+                        android:textColor="@color/Green" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/layout_Mode"
+                android:background="@drawable/sanlianborder"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/White"
+                        android:text="模式" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Green"
+                        android:id="@+id/tv_exam_mode"
+                        android:text="训练模式" />
+                    <TextView
+                        android:textSize="@dimen/tv_info_textsize_sanlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Green"
+                        android:text="白天有模拟灯光" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="5.0"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foshanheader" />
+                <TextView
+                    android:textSize="@dimen/btn_exit_start_sanlian"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:id="@+id/tv_RG"
+                    android:background="@color/green_ren_gong_bg_sanlian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:text="人工评判"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/sanlianborder"
+            android:layout_width="0.0dip"
+            android:id="@+id/ExamItemTable"
+            android:layout_height="fill_parent"
+            android:layout_margin="1.0dip"
+            android:weightSum="5.5"
+            android:paddingTop="3dp"
+            android:layout_weight="5.5">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:layout_marginRight="30dp"
+                android:weightSum="3">
+                <Button
+                    android:layout_width="0dp"
+                    android:text="上车准备"
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:layout_weight="1"
+                    android:textColor="@color/White"
+                    android:background="@drawable/ShapeSanLianButton"
+                    android:layout_height="fill_parent" />
+                <Button
+                    android:layout_width="0dp"
+                    android:text="上车准备"
+                    android:layout_weight="1"
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/ShapeSanLianButton"
+                    android:layout_height="fill_parent" />
+                <Button
+                    android:layout_width="0dp"
+                    android:text="上车准备"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:layout_marginLeft="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ShapeSanLianButton"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:weightSum="3">
+                <Button
+                    android:layout_width="0dp"
+                    android:text="上车准备"
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:layout_weight="1"
+                    android:textColor="@color/White"
+                    android:background="@drawable/ShapeSanLianButton"
+                    android:layout_height="fill_parent" />
+                <Button
+                    android:layout_width="0dp"
+                    android:text="上车准备"
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:layout_weight="1"
+                    android:textColor="@color/White"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/ShapeSanLianButton"
+                    android:layout_height="fill_parent" />
+                <Button
+                    android:layout_width="0dp"
+                    android:text="上车准备"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:layout_marginLeft="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ShapeSanLianButton"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.5">
+        <Button
+            android:textSize="@dimen/btn_exit_start_sanlian"
+            android:textColor="@color/White"
+            android:id="@+id/btn_Exit"
+            android:background="@color/green_ren_gong_bg_sanlian"
+            android:layout_width="0.0dip"
+            android:layout_height="40dp"
+            android:text="退出考试"
+            android:layout_weight="1.2" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="8.0">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="车    速:"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/White"
+                    android:gravity="center_vertical"
+                    android:text="0.0Km/h"
+                    android:id="@+id/tv_Speed"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.3" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="转    速:"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_Rev"
+                    android:text="0"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.5" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="档    位:"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_Gear"
+                    android:text="空挡"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.1" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="手    刹:"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_Handbrake"
+                    android:text="拉上"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="脚    刹:"
+                    android:layout_weight="1.1" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_Brake"
+                    android:text="未踩下"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="离    合:"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_Clutch"
+                    android:text="未踩下"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.3" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="车    门:"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_Door"
+                    android:text="关闭"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.5" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="喇    叭:"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_Hron"
+                    android:text="关闭"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.1" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="安全带:"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_Safety_Belt"
+                    android:text="解开"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="当前项目:"
+                    android:layout_weight="1.1" />
+                <TextView
+                    android:textSize="@dimen/tv_textsize_sanlian"
+                    android:textColor="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_current_exam"
+                    android:text=""
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.2" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:textSize="@dimen/btn_exit_start_sanlian"
+            android:textColor="@color/White"
+            android:id="@+id/btn_Start"
+            android:background="@color/green_ren_gong_bg_sanlian"
+            android:layout_width="0.0dip"
+            android:layout_height="40dp"
+            android:text="开始考试"
+            android:layout_weight="1.2" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/gray_show_error_code_sanlian"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.8">
+        <TextView
+            android:textColor="@color/blue_show_textcolor_error_code_sanlian"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="项目"
+            android:layout_weight="2.0" />
+        <TextView
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="扣分代码"
+            android:layout_weight="1.5" />
+        <TextView
+            android:textColor="@color/blue_show_textcolor_error_code_sanlian"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="扣分"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textColor="@color/blue_show_textcolor_error_code_sanlian"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="说明"
+            android:layout_weight="9.0" />
+        <TextView
+            android:textColor="@color/blue_show_textcolor_error_code_sanlian"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="时间"
+            android:layout_weight="2.1" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_broken_rule"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="4.2"
+        android:divider="@color/color_white"
+        android:dividerHeight="1.0dip" />
+</LinearLayout>

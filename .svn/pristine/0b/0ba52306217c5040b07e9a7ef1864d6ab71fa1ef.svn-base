@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="horizontal"
+     android:layout_width="fill_parent"
+     android:layout_height="45dp"
+     android:layout_marginLeft="30dp"
+     android:layout_weight="1"
+     android:layout_marginRight="30dp"
+     android:weightSum="3">
+  <Button
+      android:layout_width="0dp"
+      android:text="上车准备"
+      android:layout_marginLeft="30dp"
+      android:id="@+id/list_1_1"
+      android:textSize="@dimen/tv_textsize_sanlian"
+      android:layout_weight="1"
+      android:textColor="@color/White"
+      android:background="@drawable/ShapeSanLianButton"
+      android:layout_height="45dp" />
+  <Button
+      android:layout_width="0dp"
+      android:text="上车准备"
+      android:id="@+id/list_1_2"
+      android:layout_weight="1"
+      android:textSize="@dimen/tv_textsize_sanlian"
+      android:textColor="@color/White"
+      android:layout_marginLeft="60dp"
+      android:background="@drawable/shapeSanLianButtonProcess"
+      android:layout_height="45dp" />
+  <Button
+      android:layout_width="0dp"
+      android:text="上车准备"
+      android:id="@+id/list_1_3"
+      android:textColor="@color/White"
+      android:textSize="@dimen/tv_textsize_sanlian"
+      android:layout_marginLeft="60dp"
+      android:layout_weight="1"
+      android:layout_marginRight="30dp"
+      android:background="@drawable/shapeSanLianButtonFinish"
+       android:layout_height="45dp" />
+</LinearLayout>

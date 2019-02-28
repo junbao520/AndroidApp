@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10.0dip"
+    android:background="#fff7f5ed"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="灯光模拟规则语音"
+        android:id="@+id/textView22"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/dialog_input_value"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="10dp"
+        android:inputType="textMultiLine"
+        android:gravity="center_vertical"
+        android:hint="请在此输入灯光模拟语音"
+        android:ems="30"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="10.0dip"
+        android:textSize="20.0dip" />
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="灯光模拟评判规则"
+        android:id="@+id/textView22"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LightRulespinner" />
+
+
+</LinearLayout>

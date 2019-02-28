@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/global_bk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/header" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="0.02"
+            android:singleLine="true"
+            android:text="开始语音"
+            android:textColor="#ff0000"
+            android:textSize="15.0dip" />
+        <EditText
+            android:id="@+id/edtTxtStartVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="结束语音"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip" />
+        <EditText
+            android:id="@+id/edtTxtStartEndVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="项目距离"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip" />
+        <EditText
+            android:id="@+id/edtTxtStartStopCheckForwardDistance"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="手刹释放限制"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView10"
+            android:layout_weight="0.02" />
+        <EditText
+            android:id="@+id/edtTxtStartReleaseHandbrakeTimeout"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="起步时间"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip" />
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtStartTimeout" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="起步转速限制"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView13"
+            android:layout_weight="0.02" />
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtTxtStartEngineRpm" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左转向检测"
+            android:id="@+id/chkIsCheckStartLight"
+            android:textColor="@color/black" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="喇叭检测"
+            android:id="@+id/chkStartLoudSpeakerCheck"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="夜考远近光交替"
+            android:id="@+id/chkStartLowAndHighBeamInNight"
+            android:textColor="@color/black" />
+      <CheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="一档检测"
+          android:id="@+id/chkStartIsMustGearOne"
+          android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起步闯动"
+            android:id="@+id/chkStartShockEnable"
+            android:textColor="@color/black"
+            android:layout_weight="0.02" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="闯动加速度"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView14"
+            android:layout_weight="0.02" />
+        <EditText
+            android:id="@+id/edtTxtStartShockValue"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text="闯动次数"
+            android:textColor="#ff000000"
+            android:textSize="15.0dip"
+            android:id="@+id/textView15"
+            android:layout_weight="0.02" />
+        <EditText
+            android:id="@+id/edtTxtStartShockCount"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+</LinearLayout>

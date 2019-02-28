@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/global_bk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <include
+      layout="@layout/header" />
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="1"
+      android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:singleLine="true"
+        android:text="上车准备语音"
+        android:textColor="#ff0000"
+        android:textSize="15.0dip"
+        android:id="@+id/textView4"
+        android:layout_weight="0.02" />
+    <EditText
+        android:id="@+id/edtTxtPrepareDrivingVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:text="上车准备时间"
+        android:textColor="#ff000000"
+        android:textSize="15.0dip"
+        android:id="@+id/textView9"
+        android:layout_weight="0.02" />
+    <EditText
+        android:id="@+id/edtTxtAroundCarTimeout"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:ems="10"
+        android:inputType="number" />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="1"
+      android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:singleLine="true"
+        android:text="车头语音    "
+        android:textColor="#ff0000"
+        android:textSize="15.0dip"
+        android:id="@+id/textView4"
+        android:layout_weight="0.02" />
+    <EditText
+        android:id="@+id/edtTxtPrepareDrivingHeadstockVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:text="车尾语音"
+        android:textColor="#ff000000"
+        android:textSize="15.0dip"
+        android:id="@+id/textView9"
+        android:layout_weight="0.02" />
+    <EditText
+        android:id="@+id/edtTxtPrepareDrivingTailstockVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="1"
+      android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:singleLine="true"
+        android:text="车头2语音"
+        android:textColor="#ff0000"
+        android:textSize="15.0dip"
+        android:id="@+id/textView4"
+        android:layout_weight="0.02" />
+    <EditText
+        android:id="@+id/edtTxtPrepareDrivingHeadstock2Voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:text="车尾2语音"
+        android:textColor="#ff000000"
+        android:textSize="15.0dip"
+        android:id="@+id/textView9"
+        android:layout_weight="0.02" />
+    <EditText
+        android:id="@+id/edtTxtPrepareDrivingTailstock2Voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:weightSum="1"
+      android:layout_marginTop="10dp">
+    <CheckBox
+        android:id="@+id/chkPrepareDrivingEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上车准备启用"
+        android:textColor="@color/black" />
+    <CheckBox
+        android:id="@+id/chkAroundCarEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="绕车一周启用"
+        android:textColor="@color/black" />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="1">
+    <CheckBox
+        android:id="@+id/chkPrepareDriving3TouchVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="三模语音启用"
+        android:textColor="@color/black" />
+    <CheckBox
+        android:id="@+id/chkAroundCarVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="绕车一周语音启用"
+        android:textColor="@color/black" />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="1">
+    <CheckBox
+        android:id="@+id/chkPrepareDrivingHeadStockEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车头检测启用"
+        android:textColor="@color/black" />
+    <CheckBox
+        android:id="@+id/chkPrepareDrivingTailStockEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="车尾检测启用"
+        android:textColor="@color/black" />
+    <CheckBox
+        android:id="@+id/chkPrepareDrivingOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绕车顺序启用"
+        android:textColor="@color/black" />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="1">
+    <CheckBox
+        android:id="@+id/chkPrepareDrivingHeadStock2Enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车头2检测启用"
+        android:textColor="@color/black" />
+    <CheckBox
+        android:id="@+id/chkPrepareDrivingTailStock2Enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="车尾2检测启用"
+        android:textColor="@color/black" />
+  </LinearLayout>
+  <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:singleLine="true"
+        android:text="结束标志"
+        android:textColor="#ff000000"
+        android:textSize="15.0dip"
+        android:id="@+id/textView4" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车门"
+        android:textColor="@color/black"
+        android:id="@+id/radDoor" />
+    <RadioButton
+        android:id="@+id/radSafeblet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="安全带"
+        android:textColor="@color/black" />
+    <RadioButton
+       android:id="@+id/radBrake"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="刹车"
+       android:textColor="@color/black" />
+    <RadioButton
+        android:id="@+id/radEngineAndSafeBelt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="安全带和发动机"
+        android:textColor="@color/black" />
+    <RadioButton
+        android:id="@+id/radManualTrigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手动触发"
+        android:textColor="@color/black" />
+  </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:background="@drawable/titlenew">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="得分"
+                    android:id="@+id/textView2"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="100"
+                    android:id="@+id/tvScore"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:gravity="center"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="考试地图"
+                    android:id="@+id/textView3"
+                    android:gravity="center" />
+                <Spinner
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MapSpiner"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewClutch"
+                    android:src="@drawable/clutch_on" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewBreak"
+                    android:src="@drawable/brake_on" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewTurnLeftLight"
+                    android:src="@drawable/left_light_on" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewTurnRightLight"
+                    android:onClick="click"
+                    android:src="@drawable/right_light_on" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewDoor"
+                    android:src="@drawable/door_on" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewSafetyBelt"
+                    android:src="@drawable/safety_belt_on" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="开始时间"
+                    android:id="@+id/textView21"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="00:00:00"
+                    android:id="@+id/tvStartTime"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:gravity="center"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="考试模式"
+                    android:id="@+id/textView31"
+                    android:gravity="center" />
+                <Spinner
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ExamModeSpinner"
+                    android:spinnerMode="dropdown"
+                    android:textSize="20dp"
+                    android:touchscreenBlocksFocus="false"
+                    android:transitionGroup="false"
+                    android:gravity="center" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewHandBreak"
+                    android:src="@drawable/hand_break_on" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewLoudSpeaker"
+                    android:src="@drawable/loudspeaker_on" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewEngine"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/engine_on" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewLowBeamLight"
+                    android:src="@drawable/low_beam_on" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewHightBeamLight"
+                    android:src="@drawable/high_beam_on" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewFogLight"
+                    android:src="@drawable/fog_light_on" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="用时"
+                    android:id="@+id/textView211"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="00:00:00"
+                    android:id="@+id/tvUseTime"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:gravity="center"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="当前项目"
+                    android:id="@+id/textView311"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="上车准备"
+                    android:id="@+id/tvExamItem"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:gravity="center"
+                    android:background="#ffffff" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/mgViewOutLineLight"
+                    android:src="@drawable/outline_light_on"
+                    android:layout_marginTop="-15dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="角度:182.34"
+                    android:id="@+id/tvAngle"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="档位:1"
+                    android:id="@+id/tvGear"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="0.05"
+                android:weightSum="1"
+                android:layout_marginLeft="0dp"
+                android:id="@+id/RuleBreakTable"
+                android:layout_marginTop="0dp" />
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            android:background="@drawable/title2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="项目列表:"
+                    android:id="@+id/tvShowMessage"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="0.03"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="速度：55"
+                    android:id="@+id/tvSpeed"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="转速：2000"
+                    android:id="@+id/tvEngineRatio"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="里程：2000"
+                    android:id="@+id/tvMileage"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:weightSum="1">
+            <LinearLayout
+                android:id="@+id/ExamItemTable"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:layout_marginTop="100dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:background="#99b4d1"
+                android:layout_marginTop="-5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="开始考试"
+                    android:id="@+id/mgViewStartExam"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ks"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="110dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="返回主页"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/mgViewReturnHome"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/rg"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="110dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

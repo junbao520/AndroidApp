@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/global_bk"
+        android:orientation="vertical">
+        <include layout="@layout/header" />
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grayslate"
+            android:padding="5.0dip"
+            android:text="温馨提示：点击路线进入设置，长按路线进行删除"
+            android:textColor="@color/white"
+            android:textSize="20.0dip" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/graywhite">
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_lines_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:id="@+id/line_list"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/whiteGray"
+                android:dividerHeight="1dip"
+                android:fadingEdge="none"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/white" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="12.0dip"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:paddingTop="0.0dip">
+                <Button
+                    android:id="@+id/btn_roadmap_new"
+                    android:layout_width="0.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_default"
+                    android:text="新建地图"
+                    android:textSize="20dp"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

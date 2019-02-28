@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FAFAD2"
+    android:layout_margin="10.0dip"
+    android:orientation="vertical"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="请扫描二维码进入微信小程序"
+        android:textColor="#FF0000"
+        android:id="@+id/textView47"
+        android:layout_weight="4.30"
+        android:gravity="center"
+        android:singleLine="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewQRCode"
+        android:layout_weight="4.30" />
+</LinearLayout>

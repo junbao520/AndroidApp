@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#66667A"
+    android:layout_height="match_parent">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:weightSum="1"
+      android:layout_alignParentTop="true"
+      android:background="#f0f0f0"
+      android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:weightSum="1"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentStart="true"
+          android:layout_weight="0.5">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SDT-2009 智能化路考仪"
+            android:id="@+id/textView23"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:background="#EE7600"
+            android:gravity="center" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:weightSum="1"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentStart="true"
+          android:layout_weight="0.5">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.4">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="北京科技大学VR实验室"
+              android:id="@+id/textView23"
+              android:textColor="#000000"
+              android:textSize="25dp"
+              android:gravity="center"
+              android:autoText="false"
+              android:textStyle="italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.6">
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="20dp"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="1.0.2.1"
+              android:id="@+id/textView23"
+              android:textColor="#000000"
+              android:textSize="18dp"
+              android:gravity="center"
+              android:autoText="false"
+              android:layout_weight="0.2"
+              android:background="#E8E8E8"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp" />
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text=""
+              android:id="@+id/textView23"
+              android:textColor="#000000"
+              android:textSize="25dp"
+              android:gravity="center"
+              android:autoText="false"
+              android:layout_weight="0.6" />
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="退出程序"
+              android:id="@+id/tvExit"
+              android:textColor="#000000"
+              android:textSize="25dp"
+              android:gravity="center"
+              android:autoText="false"
+              android:layout_weight="0.2"
+              android:textStyle="italic" />
+        </LinearLayout>
+
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/borderGroupBox"
+        android:layout_alignParentStart="true">
+
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="200dp"
+          android:weightSum="1"
+          android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_weight="0.77">
+
+
+          <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ExamItemTable"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+          </ScrollView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:background="@drawable/borderGroupBox"
+            android:layout_weight="0.23">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="选择练习模式"
+              android:id="@+id/textView23"
+              android:layout_marginRight="10dp"
+              android:textColor="#0000ff" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1"
+              android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radExamItem"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="项目："
+                android:id="@+id/textView24"
+                android:textColor="#000000" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ExamItemSpiner"
+                android:spinnerMode="dropdown" />
+
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1"
+              android:orientation="horizontal" >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radMap"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="路线："
+                android:id="@+id/textView25"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MapSpiner"
+                android:spinnerMode="dropdown" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="1"
+              android:orientation="horizontal" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="100分"
+                android:textSize="40dp"
+                android:textColor="#ff0000"
+                android:id="@+id/tvScore"
+                android:layout_gravity="center"
+                android:gravity="center" />
+          </LinearLayout>
+
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:weightSum="1"
+          android:orientation="horizontal"
+          android:layout_marginBottom="5dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关绕模拟灯光"
+            android:id="@+id/chkCloseSimulationLights"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关绕车一周"
+            android:id="@+id/chkClosePrepareDriving"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不及格结束"
+            android:id="@+id/chkExamFailEnd"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="考试时长:17:00:00"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvInfo"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="2dp"
+          android:weightSum="1"
+          android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:background="@drawable/borderGroupBox"
+            android:layout_weight="0.77">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="错误列表"
+              android:id="@+id/textView23"
+              android:textColor="#0000ff" />
+
+          <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:layout_marginTop="2dp"
+              android:layout_marginLeft="2dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_weight="0.05"
+                android:weightSum="1"
+                android:layout_marginLeft="0dp"
+                android:id="@+id/RuleBreakTable"
+                android:layout_marginTop="0dp">
+            </LinearLayout>
+          </ScrollView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_weight="0.23">
+
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:text="开始"
+              android:id="@+id/btnStartExam"
+              android:textSize="20dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_weight="0.25" />
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:text="结束"
+              android:id="@+id/btnEndExam"
+
+              android:textSize="20dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_weight="0.25" />
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:text="上车准备完成"
+              android:id="@+id/btnFinishPrepareDriving"
+
+              android:textSize="20dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_weight="0.25" />
+
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:text="模拟靠边停车"
+              android:id="@+id/btnPullOver"
+              android:textSize="20dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_weight="0.25" />
+
+
+
+        </LinearLayout>
+
+
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>
+

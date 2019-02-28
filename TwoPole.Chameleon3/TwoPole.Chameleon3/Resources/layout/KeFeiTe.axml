@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:weightSum="7">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#1E90FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:text="527 XJ-JK400-3-训练版本"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="6.5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#000000"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/ImageUser"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/user" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="45dp"
+                        android:text="人员信息"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/user" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="45dp"
+                        android:text="排队人员"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/refersh" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="45dp"
+                        android:text="过程信息"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/head5" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="4">
+
+                                    <TableLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:weightSum="2">
+
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="姓名:  测试员"
+                                                android:textColor="#000000"
+                                                android:textSize="@dimen/exam_fontsize" />
+
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:textColor="#000000"
+                                                android:text="姓别:  男"
+                                                android:textSize="@dimen/exam_fontsize" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:weightSum="2">
+
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:textColor="#000000"
+                                                android:text="考号:  00000000"
+                                                android:textSize="@dimen/exam_fontsize" />
+
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:textColor="#000000"
+                                                android:text="证件号:  00000000"
+                                                android:textSize="@dimen/exam_fontsize" />
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:weightSum="2">
+
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:textColor="#000000"
+                                                android:text="科目:  科目三"
+                                                android:textSize="@dimen/exam_fontsize" />
+
+                                            <Spinner
+                                                android:id="@+id/MapSpiner"
+                                                android:layout_width="0dp"
+                                                android:layout_height="30dp"
+                                                android:layout_weight="1"
+                                                android:gravity="center"
+                                                android:spinnerMode="dropdown"
+                                                android:textSize="@dimen/exam_fontsize"
+                                                android:touchscreenBlocksFocus="false"
+                                                android:transitionGroup="false" />
+                                        </TableRow>
+                                    </TableLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/splitBar"
+                                android:layout_height="wrap_content" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/ExamItemTable"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:weightSum="5"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:src="@drawable/exam_default" />
+
+                                            <TextView
+                                                android:id="@+id/txtExamItem"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1.5"
+                                                android:textColor="#000000"
+                                                android:text="通过公共汽车站"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/txtExamInfo"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#000000"
+                                                android:layout_weight="3.5"
+                                                android:text="扣分：100  2018-9-8 17:00:00-&gt; 2018-9-8 18:00:00" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:id="@+id/layoutBreakeRuleInfo"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="0dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/txtExamCode"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="50dp"
+                                                android:text="40101" />
+
+                                            <TextView
+                                                android:id="@+id/txtRuleScore"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="20dp"
+                                                android:text="100"
+                                                android:textColor="#ff0000" />
+
+                                            <TextView
+                                                android:id="@+id/txtRuleContent"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="20dp"
+                                                android:text="不按规定使用安全带"
+                                                android:textColor="#9B30FF" />
+                                        </LinearLayout>
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:src="@drawable/splitBar"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:weightSum="5"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:src="@drawable/exam_default" />
+
+                                            <TextView
+                                                android:id="@+id/txtExamItem"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1.5"
+                                                android:textColor="#000000"
+                                                android:text="通过公共汽车站"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/txtExamInfo"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="#000000"
+                                                android:layout_weight="3.5"
+                                                android:text="扣分：100  2018-9-8 17:00:00-&gt; 2018-9-8 18:00:00" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:id="@+id/layoutBreakeRuleInfo"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="0dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/txtExamCode"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="50dp"
+                                                android:text="40101" />
+
+                                            <TextView
+                                                android:id="@+id/txtRuleScore"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="20dp"
+                                                android:text="100"
+                                                android:textColor="#ff0000" />
+
+                                            <TextView
+                                                android:id="@+id/txtRuleContent"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="20dp"
+                                                android:text="不按规定使用安全带"
+                                                android:textColor="#9B30FF" />
+                                        </LinearLayout>
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:src="@drawable/splitBar"
+                                            android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </ScrollView>
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/tvMapInfo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="线路:"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/exam_fontsize" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvMileage"
+                                android:layout_marginTop="2dp"
+                                android:text="里程：0 km"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/exam_fontsize" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSpeed"
+                                android:layout_marginTop="2dp"
+                                android:text="速度：0 km/h"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/exam_fontsize" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/tvGps"
+                                android:text="GPS：正常"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/exam_fontsize" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:id="@+id/btnLightingSimulation"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#00BFFF"
+                                android:text="灯光模拟"
+
+                                android:textColor="#FFFFFF"
+                                android:textSize="@dimen/exam_fontsize"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#00BFFF"
+                                android:id="@+id/btnStartExam"
+                                android:text="开始考试"
+                                android:textColor="#FFFFFF"
+                                android:textSize="@dimen/exam_fontsize"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:id="@+id/btnPullOver"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#00BFFF"
+                                android:text="靠边停车"
+                                android:textColor="#FFFFFF"
+                                android:textSize="@dimen/exam_fontsize"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

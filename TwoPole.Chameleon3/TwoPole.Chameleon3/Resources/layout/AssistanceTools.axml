@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/global_bk"
+    android:layout_height="match_parent">
+    <HorizontalScrollView android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+        <include layout="@layout/header"
+            android:id="@+id/include" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_width="1000dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+
+            android:weightSum="1"
+            android:layout_gravity="center"
+            android:id="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.50"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一键备份"
+                    android:id="@+id/btnBackUp"
+                    android:layout_weight="0.19" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一键升级"
+                    android:id="@+id/btnUpdate"
+                    android:layout_weight="0.19" />
+               <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新规升级"
+                    android:id="@+id/btnNewRulesUpdate"
+                    android:layout_weight="0.19" />
+               <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="软件升级"
+                    android:id="@+id/btnSoftwareUpgrade "
+                    android:layout_weight="0.19" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textviewTips"
+                    android:layout_weight="0.19"
+                    android:textSize="30dp"
+                    android:textColor="#ff0000" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.50"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一键导出"
+                    android:id="@+id/btnExport"
+                    android:layout_weight="0.19" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一键导入"
+                    android:id="@+id/btnImport"
+                    android:layout_weight="0.19" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（android)地图导出"
+                    android:id="@+id/btnMapExport"
+                    android:layout_weight="0.19" />
+             <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（Windows)地图导出"
+                    android:id="@+id/btnWindowsMapExport"
+                    android:layout_weight="0.19" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地图导入"
+                    android:id="@+id/btnMapImport"
+                    android:layout_weight="0.19" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.50"
+                android:layout_marginTop="10dp">
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.50"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="灯光导出"
+                    android:id="@+id/btnLightExport"
+                    android:layout_weight="0.19" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="灯光导入"
+                    android:id="@+id/btnLightImport"
+                    android:layout_weight="0.19" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="参数导出"
+                    android:id="@+id/btnSettingExport"
+                    android:layout_weight="0.19" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="参数导入"
+                    android:id="@+id/btnSettingImport"
+                    android:layout_weight="0.19" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.50"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="软件版本"
+                    android:id="@+id/textView35"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerVersion"
+                    android:layout_weight="0.19" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="考试界面"
+                    android:id="@+id/textView38"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerUIType"
+                    android:layout_weight="0.19" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="信号版本"
+                    android:id="@+id/textView38"
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerSensor"
+                    android:layout_weight="0.19" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开机广告"
+                    android:id="@+id/chkAds"
+                    android:textColor="#000000" />
+              <CheckBox
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="操作语音"
+                              android:id="@+id/chkbuttonVoice"
+                              android:textColor="#000000" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存"
+                    android:id="@+id/btnSaveSoftInfo"
+                    android:layout_weight="0.19" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.50"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:focusableInTouchMode="true"
+                android:layout_weight="0.40"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="试用日期"
+                    android:id="@+id/textView26"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="normal"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType=""
+                    android:id="@+id/edtAuthDate"
+                    android:hint="例如:2017/07/20"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主机编码"
+                    android:id="@+id/textView26"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="normal"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:textColor="#000000" />
+
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/edtAuthCode"
+                    android:hint="4位主机编码"
+                    android:layout_weight="0" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="试用"
+                    android:id="@+id/btnGrantAuth"
+                    android:layout_weight="0.19" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:focusableInTouchMode="true"
+                android:layout_weight="0.40"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="授权码："
+                    android:id="@+id/textView26"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="normal"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20dp"
+                    android:textColor="#000000" />
+
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtAuthCode1"
+                    android:inputType="number"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="——"
+                    android:id="@+id/textView28" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/edtAuthCode2"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="——"
+                    android:id="@+id/textView29" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/edtAuthCode3"
+                    android:layout_weight="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="——"
+                    android:id="@+id/textView30" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtAuthCode4"
+                    android:layout_weight="0" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="激活软件"
+                    android:id="@+id/btnActivation"
+                    android:layout_weight="0.19" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    </HorizontalScrollView>
+</ScrollView>

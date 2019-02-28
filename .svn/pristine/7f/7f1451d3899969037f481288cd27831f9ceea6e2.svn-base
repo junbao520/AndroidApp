@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:weightSum="1" >
+  <TwoPole.Chameleon3.TableTextView
+      android:id="@+id/list_1_1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="0dp"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:text="扣分项目"
+      android:layout_weight="0.063"
+      android:textSize="14dp"
+      android:gravity="center" />
+  <TwoPole.Chameleon3.TableTextView
+    android:id="@+id/list_1_2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="扣分项目"
+    android:layout_weight="0.624"
+    android:textSize="14dp"
+    android:layout_toRightOf="@+id/list_1_1"
+    android:gravity="center" />
+  <TwoPole.Chameleon3.TableTextView
+    android:id="@+id/list_1_3"
+    android:layout_width="0dp"
+    android:layout_weight="0.063"
+    android:textSize="14dp"
+    android:layout_height="wrap_content"
+   android:textAppearance="?android:attr/textAppearanceLarge"
+   android:layout_toRightOf="@+id/list_1_2"
+    android:text="扣分项目"
+   android:gravity="center" />
+  <TwoPole.Chameleon3.TableTextView
+  android:id="@+id/list_1_4"
+  android:layout_width="0dp"
+        android:textSize="14dp"
+  android:layout_height="wrap_content"
+     android:textAppearance="?android:attr/textAppearanceLarge"
+  android:layout_toRightOf="@+id/list_1_3"
+  android:text="扣分项目"
+      android:layout_weight="0.125"
+ android:gravity="center" />
+  <TwoPole.Chameleon3.TableTextView
+ android:id="@+id/list_1_5"
+ android:layout_width="0dp"
+       android:textSize="14dp"
+ android:layout_height="wrap_content"
+ android:textAppearance="?android:attr/textAppearanceLarge"
+ android:layout_toRightOf="@+id/list_1_4"
+ android:text="扣分项目"
+     android:layout_weight="0.125"
+android:gravity="center" />
+</LinearLayout>

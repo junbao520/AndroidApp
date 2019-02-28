@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="TwoPole.Chameleon3.ShunDe" android:versionCode="6" android:versionName="6.1" android:installLocation="auto">
+	<uses-feature android:name="android.hardware.usb.host" />
+	<uses-sdk android:targetSdkVersion="22" />
+	<application android:label="迈使惊" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:icon="@drawable/ic_launcher">
+		<activity android:name="twopole.chameleon3.mainactivityyunfu" android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.mainactivityyunfu" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+			</intent-filter>
+			<meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter" />
+		</activity>
+	</application>
+	<!--android:screenorientation="landscape"-->
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!--获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

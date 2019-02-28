@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hzx_bg2">
+  <ImageView
+    android:id="@+id/ImageAdsHZX"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/hzx_bgAd"
+    android:visibility="visible" />
+
+  <TextView
+        android:id="@+id/txtphone"
+        android:layout_width="466.0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="600dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="5dp"
+        android:text="服务座机：0755-23003802"
+        android:textColor="#FFFF00"
+        android:textSize="22dp" />
+  <TextView
+      android:id="@+id/txtphone2"
+      android:layout_width="466.0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="600dp"
+      android:layout_marginBottom="5dp"
+      android:text="销售热线：15813841279  13421326871  "
+      android:textColor="#FFFF00"
+      android:textSize="22dp" />
+
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="150dp"
+      android:orientation="horizontal"
+      android:layout_marginTop="225dp"
+      android:layout_marginLeft="63dp"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联网考试"
+        android:textColor="#FFFFFF"
+        android:textSize="0dp"
+        android:id="@+id/btnNetworkTestHZX"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/hzx_examing"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单机训练"
+        android:textColor="#FFFFFF"
+        android:textSize="0dp"
+        android:id="@+id/btnSingleTrainingHZX"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/hzx_training"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSystemsettingsHZX"
+        android:text="系统设置"
+        android:textColor="#FFFFFF"
+        android:textSize="0dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/hzx_setting"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出系统"
+        android:textColor="#FFFFFF"
+        android:textSize="0dp"
+        android:id="@+id/btnExitSystemHZX"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/hzx_exit"
+        android:layout_gravity="center_horizontal" />
+
+
+  </LinearLayout>
+  <TextView
+      android:id="@+id/txtAdress"
+      android:layout_width="466.0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="525dp"
+      android:layout_marginTop="25dp"
+      android:text="深圳市宝安区西乡银田工业区雍启商务大厦"
+      android:textColor="#FFFFFF"
+      android:textSize="22dp"
+      android:layout_marginBottom="5dp" />
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <HorizontalScrollView android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/mgViewTurnLeftLight"
+            android:src="@drawable/left_light_on" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/mgViewTurnRightLight"
+            android:onClick="click"
+            android:src="@drawable/right_light_on" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/mgViewOutLineLight"
+            android:src="@drawable/outline_light_on" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/mgViewLowBeamLight"
+            android:src="@drawable/low_beam_on"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/mgViewHightBeamLight"
+            android:src="@drawable/high_beam_on" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/mgViewFogLight"
+            android:src="@drawable/fog_light_on" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="成绩：100分"
+            android:id="@+id/tvScore"
+            android:textSize="40dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="#FFFFFF"
+        android:layout_marginTop="25dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="扣分项目"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:id="@+id/textView2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="扣分"
+            android:layout_marginLeft="200dp"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:id="@+id/textView2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="扣分原因"
+            android:layout_marginLeft="200dp"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:id="@+id/textView11"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginRight="20dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="0.05"
+            android:weightSum="1"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/RuleBreakTable"
+            android:layout_marginTop="0dp">
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始灯光模拟"
+            android:id="@+id/btnRandom"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+  </HorizontalScrollView>
+</ScrollView>

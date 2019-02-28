@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#C1DFE8"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="科 目 三 道 路 监 管 考 试 系 统"
+                android:id="@+id/textView6"
+                android:textSize="33dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:weightSum="0.8"
+                android:layout_weight="0.8">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginTop="5px">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="姓      名"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/textView2" />
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText5"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FFFFFF"
+                        android:text="测试学员" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="车 型"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/textView2"
+                        android:layout_marginLeft="20dp" />
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtTxtLicenseType"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FFFFFF"
+                        android:text="C1"
+                        android:enabled="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="开始考试"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/textView2" />
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtTxtStartTime"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FFFFFF"
+                        android:text="10:13:00"
+                        android:enabled="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginTop="10px">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="证 件 号"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/textView2" />
+                    <EditText
+                        android:layout_width="335dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText5"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FFFFFF"
+                        android:text="500227199" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="用       时"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/textView2" />
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtTxtUseTime"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FFFFFF"
+                        android:text="10:13:00"
+                        android:enabled="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginTop="10px">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="状      态"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/textView2" />
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText5"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FFFFFF"
+                        android:text="日考考试"
+                        android:enabled="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="成 绩"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/textView2" />
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtTxtScore"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#FFFFFF"
+                        android:text="100"
+                        android:enabled="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:background="#4683b5"
+                    android:layout_marginTop="10px">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="扣分项目"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/textView2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="扣分"
+                        android:layout_marginLeft="100dp"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/textView2"
+                        android:singleLine="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="扣分原因"
+                        android:layout_marginLeft="100dp"
+                        android:textSize="25dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/textView11" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:weightSum="0.2"
+                android:layout_weight="0.11">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/head5" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_weight="0.05"
+                    android:weightSum="1"
+                    android:layout_marginLeft="0dp"
+                    android:id="@+id/RuleBreakTable"
+                    android:layout_marginTop="0dp" />
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.06"
+                android:weightSum="1"
+                android:background="#4683b5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="项目列表"
+                    android:textSize="25dp"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/textView2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="线路:"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25dp"
+                    android:textColor="#02fc05"
+                    android:id="@+id/textView19" />
+                <Spinner
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MapSpiner"
+                    android:spinnerMode="dropdown" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="语音对讲"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="25dp"
+                    android:textColor="#FF0b92"
+                    android:id="@+id/textView2"
+                    android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:id="@+id/ExamItemTable"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.3">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7">
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:id="@+id/tips_list"
+                            android:dividerHeight="1dip"
+                            android:layout_marginTop="5dip"
+                            android:background="@color/white" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="0dp"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.25"
+                        android:layout_marginTop="8px">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开始考试"
+                            android:textSize="32dp"
+                            android:textStyle="bold"
+                            android:textColor="#3467b5"
+                            android:id="@+id/btnStartExam"
+                            android:layout_weight="1"
+                            android:background="#eff0fe" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="人工评判"
+                            android:enabled="false"
+                            android:textSize="32dp"
+                            android:textStyle="bold"
+                            android:textColor="#3467b5"
+                            android:id="@+id/btnJudg"
+                            android:layout_weight="1"
+                            android:background="#eff0fe"
+                            android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

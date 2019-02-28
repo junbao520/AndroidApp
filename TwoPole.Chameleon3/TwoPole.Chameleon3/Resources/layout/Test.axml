@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <GridView
+           android:id="@+id/TestGridView"
+           android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:layout_marginLeft="1.0dip"
+           android:layout_marginRight="1.0dip"
+           android:gravity="center"
+           android:horizontalSpacing="1.0dip"
+           android:listSelector="@null"
+           android:numColumns="3"
+           android:stretchMode="columnWidth"
+           android:descendantFocusability="blocksDescendants"
+           android:verticalSpacing="1.0dip" />
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>
