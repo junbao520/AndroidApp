@@ -8,7 +8,7 @@ namespace TwoPole.Chameleon3.Business.Rules
 {
     /// <summary>
     /// 小灯，近光和报警灯；
-    /// 、远光、左转向、右转向和雾灯不能开启
+    /// 远光、左转向、右转向和雾灯不能开启
     /// </summary>
     public class OutlineAndCautionLightRule3 : LightRule
     {

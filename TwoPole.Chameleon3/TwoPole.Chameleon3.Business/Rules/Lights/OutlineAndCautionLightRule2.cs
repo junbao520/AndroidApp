@@ -28,15 +28,13 @@ namespace TwoPole.Chameleon3.Business.Rules
             //if (!sensor.OutlineLight)
             //    return false;
 
-
-                //开近光不扣分
             if (sensor.HighBeam)
                 return false;
-
-
+            //开近光扣分
+            if (sensor.LowBeam)
+                return false;
             if (sensor.FogLight)
                 return false;
-
             if (_hasLeft && _hasRight)
                 return true;
 

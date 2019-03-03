@@ -48,18 +48,18 @@ namespace TwoPole.Chameleon3.Business.ExamItems.LuZhou
             //有可能错误检测到了开门信号导致直接结束考试流程
             //判断下是否停车肯定是停车状态下
             //判断下最近
-            if (Settings.PullOverEndMark == PullOverEndMark.OpenCloseDoorCheck &&
-                //停车状态下至少是3个连续信号
-                //保证OpenDoor都是开门信号
-                //保证基本上是车停的时候
-                PullOverStepState < PullOverStep.StopCar&& signalInfo.Sensor.SpeedInKmh<=1&& signalInfo.Sensor.Door&&queueOpenDoor.Where(s=>s==true).Count()>=2)
-            {
-                //闪过一个信号后判断
-                if(!signalInfo.Sensor.Handbrake)
-                    CheckRule(true,DeductionRuleCodes.RC40607, DeductionRuleCodes.SRC4060701);
+            //if (Settings.PullOverEndMark == PullOverEndMark.OpenCloseDoorCheck &&
+            //    //停车状态下至少是3个连续信号
+            //    //保证OpenDoor都是开门信号
+            //    //保证基本上是车停的时候
+            //    PullOverStepState < PullOverStep.StopCar&& signalInfo.Sensor.SpeedInKmh<=1&& signalInfo.Sensor.Door&&queueOpenDoor.Where(s=>s==true).Count()>=2)
+            //{
+            //    //闪过一个信号后判断
+            //    if(!signalInfo.Sensor.Handbrake)
+            //        CheckRule(true,DeductionRuleCodes.RC40607, DeductionRuleCodes.SRC4060701);
 
-                CheckEndMark(signalInfo);
-            }
+            //    CheckEndMark(signalInfo);
+            //}
 
             if (PullOverStepState == PullOverStep.None)
             {

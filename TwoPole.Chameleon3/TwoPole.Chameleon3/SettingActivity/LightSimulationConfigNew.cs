@@ -74,7 +74,7 @@ namespace TwoPole.Chameleon3
             lstLightRule.Add(new KeyValuePair<string, string>("远近光交替三次", "LowAndHighBeamThirdLightRule")); lstItemCode.Add("41603");
             lstLightRule.Add(new KeyValuePair<string, string>("雾灯、警示灯、近光、示廓灯", "FogDrivingLightRule"));lstItemCode.Add("41608");
             lstLightRule.Add(new KeyValuePair<string, string>("远光或者近光", "OpenHighLightRule")); lstItemCode.Add("41610");
-            lstLightRule.Add(new KeyValuePair<string, string>("小灯、警示灯", "OutlineAndCautionLightRule")); lstItemCode.Add("41610");
+            lstLightRule.Add(new KeyValuePair<string, string>("小灯、警示灯", "OutlineAndCautionLightRule2")); lstItemCode.Add("41610");
             lstLightRule.Add(new KeyValuePair<string, string>("小灯", "OutlineLightRule")); lstItemCode.Add("41610");
             lstLightRule.Add(new KeyValuePair<string, string>("警示灯", "CautionLightRule")); lstItemCode.Add("41610");
             lstLightRule.Add(new KeyValuePair<string, string>("关闭所有灯光", "CloseAllLightRule")); lstItemCode.Add("41609");

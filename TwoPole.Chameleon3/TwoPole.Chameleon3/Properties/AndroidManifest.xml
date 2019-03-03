@@ -1,18 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="TwoPole.Chameleon3" android:versionCode="6" android:versionName="6.1" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="TwoPole.Chameleon3.GuLin" android:versionCode="6" android:versionName="6.1">
   <uses-feature android:name="android.hardware.usb.host" />
-  <uses-sdk android:targetSdkVersion="22" />
-  <application android:label="易考星" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:icon="@drawable/iconnew">
-    <activity android:name="twopole.chameleon3.mainactivity" android:screenOrientation="portrait">
+  <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="22" />
+  <application android:label="易考星_古蔺" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+    <activity android:name="twopole.chameleon3.mainactivity" android:screenOrientation="landscape">
       <intent-filter>
-        <action android:name="android.intent.action.mainactivity" />
+        <action android:name="android.intent.action.mainactivity"/>
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
       <intent-filter>
         <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
       </intent-filter>
-      <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter" />
+      <meta-data
+                 android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                 android:resource="@xml/device_filter" />
     </activity>
   </application>
   <!--android:screenorientation="landscape"-->

@@ -720,13 +720,14 @@ namespace TwoPole.Chameleon3.Infrastructure.Services
 ('6', '6', '16,12,26,27,17,14', '2019-01-08 19:46:30', '2019-01-08 19:46:30'),
 ('7', '7', '16,8,6,17,26,14', '2019-01-08 19:47:23', '2019-01-08 19:47:23')";
             #endregion
+            //临时停车和难以移动  小灯和应急灯
             #region 初始化灯光规则
             string InitLightRuleSqlInsert = @"insert into LightRule(id,ItemCode,ItemName,VoiceText,VoiceFile,LightRuleType,CreatedOn,OperDes)values
 ('1', '41611', '夜间照明不良好的道路行驶', '夜间照明不良好的道路行驶', 'luzhou/lr41611.wav','TwoPole.Chameleon3.Business.Rules.HighBeamLightRule,TwoPole.Chameleon3.Business','2015-05-18 00:00:00','开启远光灯，近光灯，示廓灯'),
 ('2', '41617', '请将前照灯换成远光', '请将前照灯换成远光', 'luzhou/lr41601.wav','TwoPole.Chameleon3.Business.Rules.HighBeamLightRule,TwoPole.Chameleon3.Business','2015-05-18 00:00:00','开启远光灯，近光灯，示廓灯'),
 ('3', '41615', '夜间在窄路桥与非机动车会车', '夜间在窄路桥与非机动车会车', 'luzhou/lr41615.wav','TwoPole.Chameleon3.Business.Rules.LowBeamLightRule,TwoPole.Chameleon3.Business','2015-05-18 00:00:00','开启近光灯，示廓灯'),
 ('4', '41602', '夜间同方向跟车行驶', '夜间同方向跟车行驶', 'luzhou/lr41602.wav','TwoPole.Chameleon3.Business.Rules.LowBeamLightRule,TwoPole.Chameleon3.Business','2015-05-18 00:00:00','开启近光灯，示廓灯'),
-('5', '41613', '夜间在道路上发生故障，妨碍交通又难以移动', '夜间在道路上发生故障，妨碍交通又难以移动', 'luzhou/lr4161301.wav','TwoPole.Chameleon3.Business.Rules.OutlineAndCautionLightRule2,TwoPole.Chameleon3.Business','2015-05-18 00:00:00','开启近光，警告灯'),
+('5', '41613', '夜间在道路上发生故障，妨碍交通又难以移动', '夜间在道路上发生故障，妨碍交通又难以移动', 'luzhou/lr4161301.wav','TwoPole.Chameleon3.Business.Rules.OutlineAndCautionLightRule2,TwoPole.Chameleon3.Business','2015-05-18 00:00:00','开启示廓灯，警告灯'),
 ('6', '41601', '夜间在路边临时停车', '夜间在路边临时停车', 'luzhou/lr4161302.wav','TwoPole.Chameleon3.Business.Rules.OutlineAndCautionLightRule2,TwoPole.Chameleon3.Business','2015-05-18 00:00:00','开启示廓灯，警告灯'),
 ('7', '41607', '在刚才同样条件下，紧跟前车行驶', '在刚才同样条件下，紧跟前车行驶', 'luzhou/lr4160201.wav','TwoPole.Chameleon3.Business.Rules.LowBeamLightRule,TwoPole.Chameleon3.Business','2015-05-18 00:00:00','开启近光灯，示廓灯'),
 ('8', '41616', '夜间与机动车会车', '夜间与机动车会车', 'luzhou/lr41604.wav','TwoPole.Chameleon3.Business.Rules.LowBeamIgnoreCaution,TwoPole.Chameleon3.Business','2015-05-18 00:00:00','近光（忽略应急灯）'),
