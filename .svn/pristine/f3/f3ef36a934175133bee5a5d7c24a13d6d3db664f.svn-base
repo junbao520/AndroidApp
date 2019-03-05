@@ -228,7 +228,6 @@
     <Compile Include="Messages\Exam\TurnRoundMessages.cs" />
     <Compile Include="Messages\LaneNumberChangedMessage.cs" />
     <Compile Include="Messages\LaneStateChangedMessage.cs" />
-    <Compile Include="Messages\LightFinishMessage.cs" />
     <Compile Include="Messages\MapItemFinishedMessage.cs" />
     <Compile Include="Messages\MapPointChangedMessage.cs" />
     <Compile Include="Instance\Instance.cs" />

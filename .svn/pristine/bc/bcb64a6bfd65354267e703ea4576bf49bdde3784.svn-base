@@ -108,7 +108,6 @@
     <Compile Include="ExamItems\QianJiang\ModifiedGear.cs" />
     <Compile Include="ExamItems\RongChang\ModifiedGear.cs" />
     <Compile Include="ExamItems\RongChang\PrepareDrivingV4.cs" />
-    <Compile Include="ExamItems\ExamEndExamItem.cs" />
     <Compile Include="ExamItems\Roundabout.cs" />
     <Compile Include="ExamItems\SanYa\ExamItem\ChangeLanes.cs" />
     <Compile Include="ExamItems\SanYa\ExamItem\CommonExamItem.cs" />
@@ -158,8 +157,6 @@
     <Compile Include="ExamItems\XuZhou\Rules\FogDrivingLightRule.cs" />
     <Compile Include="ExamItems\YunFu\Overtake.cs" />
     <Compile Include="ExamItems\YunFu\PrepareDriving.cs" />
-    <Compile Include="ExamItems\YunFu\Rules\CloseAllLightRule.cs" />
-    <Compile Include="ExamItems\YunFu\SimulationLights.cs" />
     <Compile Include="Modules\ExamModule.cs" />
     <Compile Include="Modules\LightModule.cs" />
     <Compile Include="Modules\ModuleBase.cs" />

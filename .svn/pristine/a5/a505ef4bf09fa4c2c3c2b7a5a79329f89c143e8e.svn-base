@@ -101,7 +101,7 @@ namespace TwoPole.Chameleon3
     //Sqlite数据库里插入数据的条数上限是500
     //全程以文件包的形式存在
     //修改全局参数注意 由于不同分辨率存在同样文件故每个文件都需要 修改 中控默认使用的是主文件
-    [Activity(Label = "易考星", MainLauncher = true, Icon = "@drawable/iconnew")]
+    [Activity(Label = "易考星_古蔺", MainLauncher = true, Icon = "@drawable/iconnew")]
     public class MainActivity: Activity
     {
         #region 测试使用 可以考虑删除掉
@@ -135,10 +135,10 @@ namespace TwoPole.Chameleon3
             //主控箱版本 USB
             masterBoxVersion = MasterControlBoxVersion.USB,
             //UI
-            UIType = SystemUIType.SanLianGuangDong,
+            UIType = SystemUIType.HuaZhongLuZhou,
             //数据库
             //数据库
-            DataBaseName = DataBase.YunFu,
+            DataBaseName = DataBase.GuLin,
             //是否显示广告
             IsShowAds = true,
             //是否播放操作语音
